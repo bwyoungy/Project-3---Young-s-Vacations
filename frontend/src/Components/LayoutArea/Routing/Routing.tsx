@@ -4,6 +4,7 @@ import Home from "../../HomeArea/Home/Home";
 import PageNotFound from "../PageNotFound/PageNotFound";
 import VacationsList from "../../DataArea/VacationsList/VacationsList";
 import AddVacation from "../../DataArea/AddVacation/AddVacation";
+import VacationDetails from "../../DataArea/VacationDetails/VacationDetails";
 
 function Routing(): JSX.Element {
     return (
@@ -14,6 +15,9 @@ function Routing(): JSX.Element {
 
                 {/* Vacations */}
                 <Route path="/vacations" element={<VacationsList/>}/>
+
+                {/* Vacation Details */}
+                <Route path="/vacations/details/:vacationID" element={<VacationDetails/>}/>
 
                 {/* Add Vacation */}
                 <Route path="/vacations/add" element={<AddVacation/>}/>

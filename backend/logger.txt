@@ -10,3 +10,14 @@
 21:35:43 	 ER_BAD_FIELD_ERROR: Unknown column 'MCG.png' in 'field list'-----------------------------------------
 21:39:52 	 Route /favicon.ico doesn't exist-----------------------------------------
 21:40:15 	 ID 3 not found-----------------------------------------
+15:14:45 	 Route /api/vacations1 doesn't exist-----------------------------------------
+15:14:52 	 Route /api/vacations2 doesn't exist-----------------------------------------
+15:16:37 	 Route /api/vacations2 doesn't exist-----------------------------------------
+15:41:21 	 Route /api/vacations2 doesn't exist-----------------------------------------
+15:42:04 	 Route /api/vacations2 doesn't exist-----------------------------------------
+15:42:14 	 Route /api/vacations2 doesn't exist-----------------------------------------
+15:42:46 	 Route /api/vacations2 doesn't exist-----------------------------------------
+15:43:02 	 Route /api/vacations2 doesn't exist-----------------------------------------
+15:43:04 	 Route /api/vacations2 doesn't exist-----------------------------------------
+15:43:15 	 Route /api/vacations2 doesn't exist-----------------------------------------
+15:43:16 	 Route /api/vacations2 doesn't exist-----------------------------------------

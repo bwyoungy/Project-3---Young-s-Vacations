@@ -19,7 +19,8 @@ router.get("/vacations", async(request:Request, response:Response, next:NextFunc
 router.get("/vacations/:id", async(request:Request, response:Response, next:NextFunction)=>{
     try {
         const vacation = await vacationsLogic.getVacationById(+request.params.id);
-        response.json(vacation);
+        
+        response.json(vacation[0]);
     } catch (error:any) {
         next(error);
     }

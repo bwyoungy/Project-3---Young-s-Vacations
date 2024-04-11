@@ -2,6 +2,8 @@ import { Navigate, Route, Routes } from "react-router-dom";
 import "./Routing.css";
 import Home from "../../HomeArea/Home/Home";
 import PageNotFound from "../PageNotFound/PageNotFound";
+import VacationsList from "../../DataArea/VacationsList/VacationsList";
+import AddVacation from "../../DataArea/AddVacation/AddVacation";
 
 function Routing(): JSX.Element {
     return (
@@ -9,6 +11,12 @@ function Routing(): JSX.Element {
 			<Routes>
                 {/* Home */}
                 <Route path="/home" element={<Home/>}/>
+
+                {/* Vacations */}
+                <Route path="/vacations" element={<VacationsList/>}/>
+
+                {/* Add Vacation */}
+                <Route path="/vacations/add" element={<AddVacation/>}/>
 
                 {/* Set default page */}
                 <Route path="/" element={<Navigate to="/home"/>}/>

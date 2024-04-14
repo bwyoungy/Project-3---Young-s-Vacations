@@ -15,7 +15,7 @@ class VacationService {
     }
 
     public async addVacation(vacation:VacationModel):Promise<void> {
-        // const response = await axios.post<VacationModel>(appConfig.vacationsUrl, vacation);
+        const response = await axios.post<VacationModel>(appConfig.vacationsUrl, vacation);
     }
 }
 

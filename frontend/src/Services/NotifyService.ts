@@ -8,6 +8,8 @@ class NotifyService {
     }
     
     public errorMsg(err:any):void {
+        console.log(this.extractErrMsg(err));
+        
         this.notification.error(this.extractErrMsg(err));
     }
 

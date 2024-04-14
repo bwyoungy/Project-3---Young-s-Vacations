@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import VacationModel from "../../../Models/VacationModel";
 import vacationService from "../../../Services/VacationsService";
 import notify from "../../../Services/NotifyService";
+import { NavLink } from "react-router-dom";
 
 function VacationDetails(): JSX.Element {
 
@@ -23,6 +24,8 @@ function VacationDetails(): JSX.Element {
             <p>{new Date(vacation.startDate).toLocaleDateString()} → {new Date(vacation.endDate).toLocaleDateString()}</p>
             <p>{vacation.description}</p>
             <p>${vacation.price}</p>
+
+            <NavLink to="/vacations">Return to vacations</NavLink>
         </div>
     );
 }

@@ -21,3 +21,14 @@
 15:43:04 	 Route /api/vacations2 doesn't exist-----------------------------------------
 15:43:15 	 Route /api/vacations2 doesn't exist-----------------------------------------
 15:43:16 	 Route /api/vacations2 doesn't exist-----------------------------------------
+23:33:16 	 "imageName" length must be at least 5 characters long-----------------------------------------
+23:33:29 	 "imageName" length must be at least 5 characters long-----------------------------------------
+23:34:49 	 "endDate" must be greater than "ref:startDate"-----------------------------------------
+23:35:24 	 "endDate" must be greater than "ref:startDate"-----------------------------------------
+23:36:32 	 "endDate" must be greater than "ref:startDate"-----------------------------------------
+23:36:49 	 "endDate" must be greater than "ref:startDate"-----------------------------------------
+23:38:47 	 "endDate" must be greater than "ref:startDate"-----------------------------------------
+23:39:24 	 "endDate" must be greater than "ref:startDate"-----------------------------------------
+23:39:36 	 "endDate" must be greater than "ref:startDate"-----------------------------------------
+23:39:57 	 "endDate" must be greater than "ref:startDate"-----------------------------------------
+23:40:21 	 "endDate" must be greater than "ref:startDate"-----------------------------------------

@@ -17,6 +17,12 @@ class VacationService {
     public async addVacation(vacation:VacationModel):Promise<void> {
         const response = await axios.post<VacationModel>(appConfig.vacationsUrl, vacation);
     }
+
+    public async updateVacation(vacation:VacationModel): Promise<void> {
+        console.log(vacation);
+        
+        const response = await axios.put<VacationModel>(appConfig.vacationsUrl + vacation.vacationID, vacation);
+    }
 }
 
 const vacationService = new VacationService();

@@ -5,6 +5,7 @@ import PageNotFound from "../PageNotFound/PageNotFound";
 import VacationsList from "../../DataArea/VacationsList/VacationsList";
 import AddVacation from "../../DataArea/AddVacation/AddVacation";
 import VacationDetails from "../../DataArea/VacationDetails/VacationDetails";
+import EditVacation from "../../DataArea/EditVacation/EditVacation";
 
 function Routing(): JSX.Element {
     return (
@@ -21,6 +22,9 @@ function Routing(): JSX.Element {
 
                 {/* Add Vacation */}
                 <Route path="/vacations/add" element={<AddVacation/>}/>
+
+                {/* Edit Vacation */}
+                <Route path="/vacations/edit/:vacationID" element={<EditVacation/>}/>
 
                 {/* Set default page */}
                 <Route path="/" element={<Navigate to="/home"/>}/>

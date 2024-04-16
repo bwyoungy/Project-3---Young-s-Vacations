@@ -20,7 +20,7 @@ function VacationsList(): JSX.Element {
         <div className="VacationsList">
 			<h2>Vacations</h2>
 
-            {/* Link and button to add vacation */}
+            {/* Link and button to add vacation - FOR MANAGER ONLY */}
             <NavLink to="/vacations/add">
                 <button>Add Vacation</button>
             </NavLink>

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./VacationDetails.css";
 import { useEffect, useState } from "react";
 import VacationModel from "../../../Models/VacationModel";
@@ -8,6 +8,7 @@ import { NavLink } from "react-router-dom";
 
 function VacationDetails(): JSX.Element {
 
+    const navigate = useNavigate();
     const params = useParams();
     const [vacation, setVacation] = useState<VacationModel>(new VacationModel());
 
@@ -25,6 +26,10 @@ function VacationDetails(): JSX.Element {
             <p>{vacation.description}</p>
             <p>${vacation.price}</p>
 
+            {/* Button to link to editing of vacation - FOR ADMIN ONLY */}
+            <button onClick={() => navigate("/vacations/edit/" + vacation.vacationID)}>✎ Edit</button>
+            
+            <br />
             <NavLink to="/vacations">Return to vacations</NavLink>
         </div>
     );

@@ -19,19 +19,13 @@ function EditVacation(): JSX.Element {
             setValue("vacationID", vacation.vacationID);
             setValue("destination", vacation.destination);
             setValue("description", vacation.description);
-            // Dates are set using an annoying workaround because setvalue for Date needs to get a "YYYY-MM-DD" string but wants a Date option
-            setValue("startDate", convertDateToStringForSetValue(new Date(vacation.startDate).toLocaleDateString()) as any);
-            setValue("endDate", convertDateToStringForSetValue(new Date(vacation.endDate).toLocaleDateString()) as any);
+            setValue("startDate", vacation.startDate);
+            setValue("endDate", vacation.endDate);
             setValue("price", vacation.price);
             setValue("imageName", vacation.imageName);
         })
         .catch(err => notify.errorMsg(err))
     },[]);
-
-    // Function for workaround to convert dates saved to "YYYY-MM-DD" format
-    function convertDateToStringForSetValue(date:string):string {
-        return `${date.substring(6)}-${date.substring(3,5)}-${date.substring(0,2)}`;
-    }
 
     async function send(vacation:VacationModel) {
         try {

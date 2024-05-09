@@ -5,8 +5,10 @@ import dal from "../utils/dal";
 
 // Function to get all vacations
 async function getAllVacations():Promise<VacationModel[]> {
-    // Create SQL query - selects all columns from vacations table
-    const sqlQuery = `SELECT * FROM vacations`;
+    // Create SQL query - selects all columns from vacations table, with dates formatted
+    const sqlQuery = `
+        SELECT vacationID, destination, description, DATE_FORMAT(startDate, "%Y-%m-%d") as "startDate", DATE_FORMAT(endDate, "%Y-%m-%d") as "endDate", price, imageName
+        FROM vacations`;
 
     // Execute SQL query and save in variable to be returned
     const vacations = await dal.execute(sqlQuery);
@@ -15,9 +17,9 @@ async function getAllVacations():Promise<VacationModel[]> {
 
 // Function to get a vacation based on its id
 async function getVacationById(id:number):Promise<VacationModel> {
-    // Create SQL query - selects all columns from vacations table for specific id
+    // Create SQL query - selects all columns from vacations table for specific id, with dates formatted
     const sqlQuery = `
-    SELECT *
+    SELECT vacationID, destination, description, DATE_FORMAT(startDate, "%Y-%m-%d") as "startDate", DATE_FORMAT(endDate, "%Y-%m-%d") as "endDate", price, imageName
     FROM vacations
     WHERE vacationID = ${id};
     `;

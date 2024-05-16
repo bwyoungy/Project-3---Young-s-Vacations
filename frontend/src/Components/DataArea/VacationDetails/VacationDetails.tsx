@@ -18,6 +18,17 @@ function VacationDetails(): JSX.Element {
         .catch(err => notify.errorMsg(err));
     },[]);
 
+    async function deleteVacation(vacationID:number) {
+        try {
+            await vacationService.deleteVacation(vacationID);
+            notify.successMsg("Vacation successfully deleted!");
+            
+        } catch (err:any) {
+            notify.errorMsg(err);
+        }
+        navigate("/vacations");
+    }
+
     return (
         <div className="VacationDetails">
 			<h2>Vacation Details</h2>
@@ -28,7 +39,8 @@ function VacationDetails(): JSX.Element {
 
             {/* Button to link to editing of vacation - FOR ADMIN ONLY */}
             <button onClick={() => navigate("/vacations/edit/" + vacation.vacationID)}>✎ Edit</button>
-            
+            {/* Button to delete vacation - FOR ADMIN ONLY */}
+            <button onClick={() => deleteVacation(vacation.vacationID)}>✗ Delete</button>
             <br />
             <NavLink to="/vacations">Return to vacations</NavLink>
         </div>

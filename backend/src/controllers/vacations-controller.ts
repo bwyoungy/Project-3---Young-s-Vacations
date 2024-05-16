@@ -54,7 +54,7 @@ router.put("/vacations/:id", async(request:Request,response:Response,next:NextFu
 router.delete("/vacations/:id", async(request:Request,response:Response,next:NextFunction)=>{
     try {
         await vacationsLogic.deleteVacation(+request.params.id);
-        response.status(204);
+        response.sendStatus(204);
     } catch (error:any) {
         next(error);
     }

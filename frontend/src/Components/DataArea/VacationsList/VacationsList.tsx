@@ -14,7 +14,7 @@ function VacationsList(): JSX.Element {
         vacationService.getAllVacations()
         .then(vacations => setVacations(vacations))
         .catch(err => notify.errorMsg(err));
-    },[])
+    },[vacations])
 
     return (
         <div className="VacationsList">

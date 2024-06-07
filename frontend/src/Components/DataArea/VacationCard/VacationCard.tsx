@@ -18,7 +18,6 @@ function VacationCard(props: VacationCardProps): JSX.Element {
         } catch (err:any) {
             notify.errorMsg(err);
         }
-        navigate("/vacations");
         window.location.reload();
     }
 

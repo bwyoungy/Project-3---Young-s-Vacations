@@ -57,7 +57,7 @@ async function addVacation(vacation:VacationModel):Promise<VacationModel> {
     // Create SQL query - add the information from the vacation passed to the function into the vacations table
     const sqlQuery = `
     INSERT INTO vacations(destination, description, startDate, endDate, price, imageName)
-    VALUES("?", "?", "?", "?", ?, "?");`;
+    VALUES(?, ?, ?, ?, ?, ?);`;
 
     // Execute SQL query and save the info recieved from it
     const info:OkPacket = await dal.execute(sqlQuery, [vacation.destination, vacation.description, vacation.startDate, vacation.endDate, vacation.price, vacation.imageName]);
@@ -120,12 +120,12 @@ async function updateVacation(vacation:VacationModel):Promise<VacationModel> {
     // Create SQL query - update the vacation based on information from the vacation passed to the function
     const sqlQuery = `
     UPDATE vacations SET
-        destination = "?",
-        description = "?",
-        startDate = "?",
-        endDate = "?",
+        destination = ?,
+        description = ?,
+        startDate = ?,
+        endDate = ?,
         price = ?,
-        imageName = "?"
+        imageName = ?
     WHERE vacationID = ?;
     `;
 

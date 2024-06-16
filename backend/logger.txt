@@ -417,3 +417,4 @@
 10:25:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
 12:44:54 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
 14:19:45 	 ENOENT: no such file or directory, unlink 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\'6af10153-5bbb-426c-92af-df78e9ae960c.png''-----------------------------------------
+14:26:36 	 ENOENT: no such file or directory, unlink 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\'63e841b0-e72f-4aa5-b2e7-37dd0daf0f5c.jpeg''-----------------------------------------

@@ -23,11 +23,11 @@ async function getVacationById(id:number):Promise<VacationModel> {
     const sqlQuery = `
     SELECT vacationID, destination, description, DATE_FORMAT(startDate, "%Y-%m-%d") as "startDate", DATE_FORMAT(endDate, "%Y-%m-%d") as "endDate", price, imageName
     FROM vacations
-    WHERE vacationID = ${id};
+    WHERE vacationID = ?;
     `;
 
     // Execute SQL query and save in variable to be returned
-    const vacation = await dal.execute(sqlQuery);
+    const vacation = await dal.execute(sqlQuery, [id]);
 
     // If vacation not found throw an error that it doesn't exist (and quit function)
     if (!vacation) throw new ResourceNotFoundErrorModel(id);
@@ -57,10 +57,10 @@ async function addVacation(vacation:VacationModel):Promise<VacationModel> {
     // Create SQL query - add the information from the vacation passed to the function into the vacations table
     const sqlQuery = `
     INSERT INTO vacations(destination, description, startDate, endDate, price, imageName)
-    VALUES("${vacation.destination}", "${vacation.description}", "${vacation.startDate}", "${vacation.endDate}", ${vacation.price}, "${vacation.imageName}");`;
+    VALUES("?", "?", "?", "?", ?, "?");`;
 
     // Execute SQL query and save the info recieved from it
-    const info:OkPacket = await dal.execute(sqlQuery);
+    const info:OkPacket = await dal.execute(sqlQuery, [vacation.destination, vacation.description, vacation.startDate, vacation.endDate, vacation.price, vacation.imageName]);
 
     // Update the parameter vacation's ID as the auto incremented ID recieved from the info
     vacation.vacationID = info.insertId;
@@ -80,11 +80,11 @@ async function updateVacation(vacation:VacationModel):Promise<VacationModel> {
     const imgSqlQuery = `
     SELECT imageName
     FROM vacations
-    WHERE vacationID = ${vacation.vacationID};
+    WHERE vacationID = ?;
     `;
 
     // Execute image SQL query and save the info
-    const imgInfo = await dal.execute(imgSqlQuery);
+    const imgInfo = await dal.execute(imgSqlQuery, [vacation.vacationID]);
     
     // Save the image path
     const imgPath = imgInfo?.[0]?.imageName;
@@ -120,17 +120,17 @@ async function updateVacation(vacation:VacationModel):Promise<VacationModel> {
     // Create SQL query - update the vacation based on information from the vacation passed to the function
     const sqlQuery = `
     UPDATE vacations SET
-        destination = "${vacation.destination}",
-        description = "${vacation.description}",
-        startDate = "${vacation.startDate}",
-        endDate = "${vacation.endDate}",
-        price = ${vacation.price},
-        imageName = "${vacation.imageName}"
-    WHERE vacationID = ${vacation.vacationID};
+        destination = "?",
+        description = "?",
+        startDate = "?",
+        endDate = "?",
+        price = ?,
+        imageName = "?"
+    WHERE vacationID = ?;
     `;
 
     // Execute SQL query and save the info recieved from it
-    const info:OkPacket = await dal.execute(sqlQuery);
+    const info:OkPacket = await dal.execute(sqlQuery, [vacation.destination, vacation.description, vacation.startDate, vacation.endDate, vacation.price, vacation.imageName, vacation.vacationID]);
 
     // Check if ID exists by checking affectedRows of info, if it doesn't throw an error (and quit function)
     if (info.affectedRows <= 0) throw new ResourceNotFoundErrorModel(vacation.vacationID);
@@ -144,11 +144,11 @@ async function deleteVacation(id:number):Promise<void> {
     const imgSqlQuery = `
     SELECT imageName
     FROM vacations
-    WHERE vacationID = ${id};
+    WHERE vacationID = ?;
     `;
 
     // Execute SQL query and save the info
-    const imgInfo = await dal.execute(imgSqlQuery);
+    const imgInfo = await dal.execute(imgSqlQuery, [id]);
 
     // If there isn't data for id being checked to delete, throw error 
     if(!imgInfo[0]) throw new ResourceNotFoundErrorModel(id);
@@ -156,11 +156,11 @@ async function deleteVacation(id:number):Promise<void> {
     // Create SQL query - delete vacation from table based on id passed
     const sqlQuery = `
     DELETE FROM vacations
-    WHERE vacationID = ${id};
+    WHERE vacationID = ?;
     `;
 
     // Execute SQL query and save the info recieved from it
-    const info:OkPacket = await dal.execute(sqlQuery);
+    const info:OkPacket = await dal.execute(sqlQuery, [id]);
 
     // Check if ID exists by checking affectedRows of info, if it doesn't throw an error
     // Commenting out as unneccesary in this instance as was checked earlier

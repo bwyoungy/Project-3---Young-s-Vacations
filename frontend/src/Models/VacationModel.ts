@@ -6,6 +6,7 @@ class VacationModel {
     public endDate:Date;
     public price:number;
     public imageName:string;
+    public image: FileList;
 
     public static destinationValidation = {
         required: {value: true, message: "Please write a destination"},

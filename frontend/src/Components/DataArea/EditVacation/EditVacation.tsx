@@ -5,11 +5,13 @@ import VacationModel from "../../../Models/VacationModel";
 import { useForm } from "react-hook-form";
 import vacationService from "../../../Services/VacationsService";
 import notify from "../../../Services/NotifyService";
+import appConfig from "../../../Utils/Config";
 
 function EditVacation(): JSX.Element {
     const params = useParams();
     const [vacation, setVacation] = useState<VacationModel>(new VacationModel);
     const {register, handleSubmit, formState, setValue} = useForm<VacationModel>();
+    
     const navigate = useNavigate();
 
     useEffect(()=>{
@@ -22,6 +24,7 @@ function EditVacation(): JSX.Element {
             setValue("startDate", vacation.startDate);
             setValue("endDate", vacation.endDate);
             setValue("price", vacation.price);
+            setValue("image", vacation.image);
             setValue("imageName", vacation.imageName);
         })
         .catch(err => notify.errorMsg(err))
@@ -64,8 +67,15 @@ function EditVacation(): JSX.Element {
                 <input type="number" step={1} {...register("price", VacationModel.priceValidation)}/>
                 <p className="error">{formState.errors.price?.message}</p>
 
-                <label>imageName: </label>
-                <input type="text" {...register("imageName")}/>
+                <label>Image: </label>
+                <p>This is a preview of the current image for this vacation.</p>
+                <div className="edit-picframe">
+                    <img src={appConfig.vacationsUrl + "images/" + vacation.imageName} alt={"Image preview for " + vacation.destination} title={"Image preview for " + vacation.destination} />
+                </div>
+                <p>To select a different image, upload it from your device:</p>
+                <input type="file" accept="image/*" {...register("image")}/>
+                
+                <input type="hidden" {...register("imageName")}/>
 
                 <br />
                 <button>Update Vacation</button>

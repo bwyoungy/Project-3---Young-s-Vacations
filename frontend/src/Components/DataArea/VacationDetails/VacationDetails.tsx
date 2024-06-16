@@ -5,6 +5,7 @@ import VacationModel from "../../../Models/VacationModel";
 import vacationService from "../../../Services/VacationsService";
 import notify from "../../../Services/NotifyService";
 import { NavLink } from "react-router-dom";
+import appConfig from "../../../Utils/Config";
 
 function VacationDetails(): JSX.Element {
 
@@ -34,6 +35,9 @@ function VacationDetails(): JSX.Element {
 			<h2>Vacation Details</h2>
             <h4>{vacation.destination}</h4>
             <p>{new Date(vacation.startDate).toLocaleDateString()} → {new Date(vacation.endDate).toLocaleDateString()}</p>
+            <div className="det-picframe">
+                <img src={appConfig.vacationsUrl + "images/" + vacation.imageName} alt={"Picture of " + vacation.destination}/>
+            </div>
             <p>{vacation.description}</p>
             <p>${vacation.price}</p>
 

@@ -1,6 +1,7 @@
 import express, { NextFunction, Request, Response } from "express";
 import vacationsLogic from "../logic/vacations-logic";
 import VacationModel from "../models/vacation-model";
+import path from "path";
 
 // Create express router
 const router = express.Router();
@@ -29,8 +30,12 @@ router.get("/vacations/:id", async(request:Request, response:Response, next:Next
 // Route to add a new vacation
 router.post("/vacations", async(request:Request, response:Response, next:NextFunction)=>{
     try {
+        // Set uploaded file in body of request
+        request.body.image = request.files?.image;
+        
         const vacation = new VacationModel(request.body);
         const addedVacation = await vacationsLogic.addVacation(vacation);
+        
         response.status(201).json(addedVacation);
     } catch (error:any) {
         next(error);
@@ -40,7 +45,10 @@ router.post("/vacations", async(request:Request, response:Response, next:NextFun
 // Route to update a vacation
 router.put("/vacations/:id", async(request:Request,response:Response,next:NextFunction)=>{
     try {
-        request.body.id = +request.params.id;
+        // Set uploaded file in body of request
+        request.body.image = request.files?.image;
+
+        request.body.vacationID = +request.params.id;
         
         const vacation = new VacationModel(request.body);
         const updatedVacation = await vacationsLogic.updateVacation(vacation);
@@ -55,6 +63,18 @@ router.delete("/vacations/:id", async(request:Request,response:Response,next:Nex
     try {
         await vacationsLogic.deleteVacation(+request.params.id);
         response.sendStatus(204);
+    } catch (error:any) {
+        next(error);
+    }
+});
+
+// Route to get an image based on it's name
+router.get("/vacations/images/:imageName", async(request:Request,response:Response,next:NextFunction)=>{
+    try {
+        // Get path for image saved in server
+        const serverPath = path.join(__dirname, "..", "..", "..", "frontend", "public", request.params.imageName);
+        // Send the image saved in the path through the response
+        response.sendFile(serverPath);
     } catch (error:any) {
         next(error);
     }

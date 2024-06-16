@@ -4,6 +4,7 @@ import routeNotFound from "./middleware/route-not-found";
 import catchAll from "./middleware/catch-all";
 import appConfig from "./utils/app-config";
 import vacationsController from "./controllers/vacations-controller";
+import expressFileUpload from "express-fileupload"
 
 // Start express server
 const server = express();
@@ -11,6 +12,9 @@ const server = express();
 // Add CORS and JSON use
 server.use(cors());
 server.use(express.json());
+
+// Add handling of uploaded files
+server.use(expressFileUpload());
 
 // Route api to the controller
 server.use("/api", vacationsController);
@@ -20,4 +24,4 @@ server.use("*", routeNotFound);
 server.use(catchAll);
 
 // Start server listener
-server.listen(appConfig.port,()=>console.log(`Listening on http://localhost:${appConfig.port}`));
+server.listen(appConfig.port,()=>console.log(`Listening on http://${appConfig.host}:${appConfig.port}`));

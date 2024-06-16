@@ -1,3 +1,14 @@
-.VacationDetails {
-	
+.det-picframe {
+    width: auto;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.det-picframe img {
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 10px auto;
 }

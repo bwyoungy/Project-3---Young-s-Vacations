@@ -1,3 +1,19 @@
-.VacationCard {
-	
+.card-picframe {
+    width: auto;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-picframe img {
+    display: block;
+    width: auto;
+    height: 100%;
+    margin: 10px auto;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card-picframe img:hover {
+    transform: scale(1.1);
 }

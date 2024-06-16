@@ -51,8 +51,8 @@ function AddVacation(): JSX.Element {
                 <input type="number" step={1} {...register("price", VacationModel.priceValidation)}/>
                 <p className="error">{formState.errors.price?.message}</p>
 
-                <label>imageName: </label>
-                <input type="text" {...register("imageName")}/>
+                <label>Image: </label>
+                <input type="file" accept="image/*" {...register("image")}/>
 
                 <button>Add Vacation</button>
             </form>

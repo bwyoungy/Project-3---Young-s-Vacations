@@ -44,3 +44,375 @@
 13:35:20 	 ID 26 not found-----------------------------------------
 13:45:08 	 ID 27 not found-----------------------------------------
 17:17:09 	 ID 37 not found-----------------------------------------
+18:51:29 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\undefined'-----------------------------------------
+19:01:56 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\undefined'-----------------------------------------
+19:02:14 	 "destination" is required-----------------------------------------
+19:02:21 	 "destination" is required-----------------------------------------
+19:02:27 	 "destination" is required-----------------------------------------
+19:02:43 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\undefined'-----------------------------------------
+19:03:14 	 "destination" is required-----------------------------------------
+19:04:26 	 "destination" is required-----------------------------------------
+19:04:28 	 "destination" is required-----------------------------------------
+19:04:30 	 "destination" is required-----------------------------------------
+19:04:31 	 "destination" is required-----------------------------------------
+19:04:31 	 "destination" is required-----------------------------------------
+19:04:31 	 "destination" is required-----------------------------------------
+19:04:31 	 "destination" is required-----------------------------------------
+19:05:24 	 "destination" is required-----------------------------------------
+19:05:43 	 "destination" is required-----------------------------------------
+19:08:08 	 "destination" is required-----------------------------------------
+19:08:30 	 "destination" is required-----------------------------------------
+19:10:59 	 "destination" is required-----------------------------------------
+19:12:04 	 "destination" is required-----------------------------------------
+19:12:33 	 "destination" is required-----------------------------------------
+19:12:56 	 "destination" is required-----------------------------------------
+19:13:13 	 "destination" is required-----------------------------------------
+0:50:47 	 -----------------------------------------
+0:51:06 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\undefined'-----------------------------------------
+8:05:50 	 "destination" is required-----------------------------------------
+15:34:35 	 "destination" is required-----------------------------------------
+15:35:07 	 "destination" is required-----------------------------------------
+15:36:28 	 "destination" is required-----------------------------------------
+15:52:30 	 "destination" is required-----------------------------------------
+15:53:18 	 "destination" is required-----------------------------------------
+15:54:08 	 "destination" is required-----------------------------------------
+15:54:40 	 No image provided!-----------------------------------------
+15:56:14 	 No image provided!-----------------------------------------
+15:56:27 	 No image provided!-----------------------------------------
+16:00:36 	 No image provided!-----------------------------------------
+16:01:05 	 No image provided!-----------------------------------------
+16:02:53 	 "destination" is required-----------------------------------------
+16:16:55 	 "destination" is required-----------------------------------------
+16:17:14 	 "destination" is required-----------------------------------------
+16:24:46 	 ENOENT: no such file or directory, open 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\d2283075-78ff-4397-b817-237936c9602e.jpeg'-----------------------------------------
+17:56:19 	 ENOENT: no such file or directory, open 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\e90d5020-31ef-409c-af49-d6d0939988b7.jpeg'-----------------------------------------
+18:02:00 	 ENOENT: no such file or directory, open 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\f53c3b70-f792-408c-aeea-4240a025271f.jpeg'-----------------------------------------
+18:03:34 	 ENOENT: no such file or directory, open 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\13c2ae45-f033-489b-a82d-ed0c2cb68406.jpeg'-----------------------------------------
+18:03:54 	 ENOENT: no such file or directory, open 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\bbd9ac76-4b49-46d9-b494-d285b49161f3.jpeg'-----------------------------------------
+18:04:15 	 ENOENT: no such file or directory, open 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\a111ebe0-bdb0-43e0-96f1-80c9cd4a78d7.jpeg'-----------------------------------------
+18:04:46 	 ENOENT: no such file or directory, open 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\46894d49-2ba6-40ba-9762-976672b6afb2.jpeg'-----------------------------------------
+21:36:41 	 ENOENT: no such file or directory, open 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\43029fdc-b5cb-46fd-b312-dbf0200450d8.jpeg'-----------------------------------------
+21:37:30 	 ENOENT: no such file or directory, open 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\b60a66eb-1ee1-419b-b16f-5e12d26ea33c.jpeg'-----------------------------------------
+21:37:56 	 ENOENT: no such file or directory, open 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\a92df061-1c98-44c0-b279-67c2ec2ed60c.jpeg'-----------------------------------------
+21:38:27 	 ENOENT: no such file or directory, open 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\95c2fab8-7326-4152-9eb7-59e69094e557.jpeg'-----------------------------------------
+21:40:13 	 ER_BAD_FIELD_ERROR: Unknown column 'image' in 'field list'-----------------------------------------
+21:40:59 	 ER_BAD_FIELD_ERROR: Unknown column 'image' in 'field list'-----------------------------------------
+21:41:49 	 ER_BAD_FIELD_ERROR: Unknown column 'image' in 'field list'-----------------------------------------
+21:44:17 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\undefined'-----------------------------------------
+21:44:17 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\[object Object]'-----------------------------------------
+21:44:34 	 Cannot read properties of undefined (reading 'image')-----------------------------------------
+21:44:35 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\undefined'-----------------------------------------
+21:45:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\undefined'-----------------------------------------
+21:45:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\[object Object]'-----------------------------------------
+21:45:41 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\images\[object Object]'-----------------------------------------
+21:48:38 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+21:48:50 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+21:48:57 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+21:49:11 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+21:49:18 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+21:49:18 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+21:49:18 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+21:49:18 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+21:49:31 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+21:49:33 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+21:49:33 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+21:49:33 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+21:49:33 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+21:49:33 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+21:49:33 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+21:49:33 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+21:49:33 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+21:52:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+21:52:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+21:52:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+21:52:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+21:52:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+21:52:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+21:52:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+21:52:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+21:53:44 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+21:53:44 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+21:53:44 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+21:53:44 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+21:57:18 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+21:58:22 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+22:00:46 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:00:46 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:00:46 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:00:46 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:01:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:01:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:01:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:01:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:01:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:01:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:01:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:01:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:01:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:01:17 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:01:17 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:01:17 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:01:17 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:01:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:01:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:01:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:01:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:01:44 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:01:44 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:01:44 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:01:44 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:01:52 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:01:52 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:01:52 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:01:52 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:02:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:02:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:02:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:02:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:02:38 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:02:42 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:02:42 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:02:42 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:02:42 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:03:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:03:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:03:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:03:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:03:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:03:12 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:03:14 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:03:14 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:03:14 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:03:14 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:03:49 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:03:49 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:03:49 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:03:49 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:03:49 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:04:41 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:04:41 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:04:41 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:04:41 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:05:01 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:05:01 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:05:01 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:05:01 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:05:01 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:05:01 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:05:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:05:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:05:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:05:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:05:03 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:05:03 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:05:03 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:05:03 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:05:55 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:05:55 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:05:55 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:05:55 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:06:09 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:06:09 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:06:09 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:06:09 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:09:03 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:09:03 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:09:03 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:09:03 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:12:26 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+22:12:26 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+22:12:26 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+22:12:26 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+22:14:36 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'-----------------------------------------
+22:14:51 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'-----------------------------------------
+1:36:04 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'-----------------------------------------
+1:36:59 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'-----------------------------------------
+1:38:11 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'-----------------------------------------
+1:38:59 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'-----------------------------------------
+1:39:50 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'-----------------------------------------
+1:40:30 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'-----------------------------------------
+1:41:30 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'-----------------------------------------
+1:42:47 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'-----------------------------------------
+1:43:23 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'-----------------------------------------
+1:44:11 	 ER_BAD_FIELD_ERROR: Unknown column 'undefined' in 'where clause'-----------------------------------------
+1:45:23 	 ENOENT: no such file or directory, access 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\backend\...\frontend\public\undefined'-----------------------------------------
+1:45:36 	 ENOENT: no such file or directory, access 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\backend\...\frontend\public\undefined'-----------------------------------------
+1:46:06 	 ENOENT: no such file or directory, access 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\backend\...\frontend\public\undefined'-----------------------------------------
+1:48:23 	 ENOENT: no such file or directory, access 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+2:33:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:33:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+2:33:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+2:33:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+2:33:47 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:33:47 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:33:47 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+2:33:47 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+2:33:47 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+2:35:05 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:35:05 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+2:35:05 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+2:35:05 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+2:36:09 	 ENOENT: no such file or directory, access 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+2:36:54 	 ENOENT: no such file or directory, access 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+2:37:46 	 ENOENT: no such file or directory, access 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+2:38:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:38:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:38:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+2:38:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+2:38:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+2:39:04 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:39:04 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+2:39:04 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+2:39:04 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+2:40:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:40:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+2:40:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+2:40:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+2:40:10 	 No image provided!-----------------------------------------
+2:40:19 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+2:40:19 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:40:19 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+2:40:19 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+2:41:51 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+2:41:52 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:41:52 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+2:41:52 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+2:41:52 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+2:43:11 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:43:11 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+2:43:11 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+2:43:11 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+2:43:32 	 No image provided!-----------------------------------------
+2:44:05 	 No image provided!-----------------------------------------
+2:44:15 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:44:15 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+2:44:15 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+2:44:15 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+2:45:12 	 No image provided!-----------------------------------------
+2:45:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:45:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+2:45:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+2:45:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+2:49:27 	 No image provided!-----------------------------------------
+2:49:34 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+2:49:34 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+2:49:34 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+2:49:34 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:01:30 	 No image provided!-----------------------------------------
+4:02:20 	 No image provided!-----------------------------------------
+4:05:20 	 No image provided!-----------------------------------------
+4:05:43 	 No image provided!-----------------------------------------
+4:06:09 	 No image provided!-----------------------------------------
+4:06:48 	 No image provided!-----------------------------------------
+4:09:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:09:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:09:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:09:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:09:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:15:30 	 Route /favicon.ico doesn't exist-----------------------------------------
+4:19:17 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:19:17 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:19:17 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:19:17 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:21:28 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:21:28 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:21:28 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:21:28 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:21:28 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:32:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:32:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:32:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:32:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:32:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:32:57 	 Cannot read properties of undefined (reading 'image')-----------------------------------------
+4:32:58 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:32:58 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:32:58 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:32:58 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:35:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:35:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:35:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:35:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:35:27 	 Cannot read properties of undefined (reading 'imageName')-----------------------------------------
+4:35:27 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:35:27 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:35:27 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:35:27 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:36:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:36:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:36:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:36:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:36:10 	 Cannot read properties of undefined (reading 'image')-----------------------------------------
+4:36:10 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:36:10 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:36:10 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:36:10 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:36:57 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:36:57 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:36:57 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:36:57 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:37:19 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:37:19 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:37:19 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:37:19 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:37:23 	 Cannot read properties of undefined (reading 'imageName')-----------------------------------------
+4:37:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:37:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:37:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:37:24 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:42:21 	 ENOENT: no such file or directory, access 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:45:37 	 ENOENT: no such file or directory, access 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:46:09 	 ENOENT: no such file or directory, access 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:48:31 	 ENOENT: no such file or directory, access 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:48:46 	 ENOENT: no such file or directory, access 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\Jerusalem.jpg'-----------------------------------------
+4:52:46 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:52:46 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\MCG.png'-----------------------------------------
+4:52:46 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:52:54 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:52:54 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\matza.jpg'-----------------------------------------
+4:53:03 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\cheezypizza.yum'-----------------------------------------
+4:53:58 	 Cannot read properties of undefined (reading 'imageName')-----------------------------------------
+4:56:00 	 Cannot read properties of undefined (reading 'imageName')-----------------------------------------
+4:57:51 	 Cannot read properties of undefined (reading 'imageName')-----------------------------------------
+4:59:37 	 Cannot read properties of undefined (reading 'imageName')-----------------------------------------
+5:05:30 	 ID 51 not found-----------------------------------------
+5:06:17 	 Cannot read properties of undefined (reading 'imageName')-----------------------------------------
+5:07:15 	 Cannot read properties of undefined (reading 'imageName')-----------------------------------------
+5:07:53 	 Cannot read properties of undefined (reading 'imageName')-----------------------------------------
+5:14:34 	 ENOENT: no such file or directory, unlink 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+5:16:05 	 ID 57 not found-----------------------------------------
+5:16:47 	 ID 57 not found-----------------------------------------
+5:18:23 	 ID 57 not found-----------------------------------------
+5:18:38 	 ID 57 not found-----------------------------------------
+5:19:09 	 ID 57 not found-----------------------------------------
+5:19:34 	 ID 57 not found-----------------------------------------
+6:07:22 	 No image provided!-----------------------------------------
+6:19:10 	 No image provided!-----------------------------------------
+6:19:54 	 No image provided!-----------------------------------------
+6:20:49 	 No image provided!-----------------------------------------
+6:21:19 	 No image provided!-----------------------------------------
+6:21:25 	 No image provided!-----------------------------------------
+6:21:30 	 No image provided!-----------------------------------------
+6:21:38 	 No image provided!-----------------------------------------
+10:08:26 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:10:37 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:10:40 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:10:54 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:10:57 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:11:00 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:11:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:11:21 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:11:30 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:11:32 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:11:35 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:13:04 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:13:04 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:13:06 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:13:06 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:18:58 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:20:40 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:21:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:25:01 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:25:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+10:25:23 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+12:44:54 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------

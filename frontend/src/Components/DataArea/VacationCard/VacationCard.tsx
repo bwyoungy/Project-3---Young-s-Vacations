@@ -3,6 +3,7 @@ import VacationModel from "../../../Models/VacationModel";
 import "./VacationCard.css";
 import notify from "../../../Services/NotifyService";
 import vacationService from "../../../Services/VacationsService";
+import appConfig from "../../../Utils/Config";
 
 interface VacationCardProps {
     vacation: VacationModel;
@@ -26,7 +27,11 @@ function VacationCard(props: VacationCardProps): JSX.Element {
 			<h4>{props.vacation.destination}</h4>
             <p>{new Date(props.vacation.startDate).toLocaleDateString()} → {new Date(props.vacation.endDate).toLocaleDateString()}</p>
             <p>${props.vacation.price}</p>
-            <NavLink to={"/vacations/details/" + props.vacation.vacationID}>More details</NavLink>
+            <NavLink to={"/vacations/details/" + props.vacation.vacationID}>
+                <div className="card-picframe">
+                    <img src={appConfig.vacationsUrl + "images/" + props.vacation.imageName} alt={"Picture of " + props.vacation.destination}/>
+                </div>
+            </NavLink>
             <br />
             {/* Button to link to editing of vacation - FOR ADMIN ONLY */}
             <button onClick={() => navigate("/vacations/edit/" + props.vacation.vacationID)}>✎ Edit</button>

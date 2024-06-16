@@ -36,7 +36,7 @@ function VacationDetails(): JSX.Element {
             <h4>{vacation.destination}</h4>
             <p>{new Date(vacation.startDate).toLocaleDateString()} → {new Date(vacation.endDate).toLocaleDateString()}</p>
             <div className="det-picframe">
-                <img src={appConfig.vacationsUrl + "images/" + vacation.imageName} alt={"Picture of " + vacation.destination}/>
+                <img src={appConfig.vacationsUrl + "images/" + vacation.imageName} alt={"Picture of " + vacation.destination} title={"Picture of " + vacation.destination}/>
             </div>
             <p>{vacation.description}</p>
             <p>${vacation.price}</p>

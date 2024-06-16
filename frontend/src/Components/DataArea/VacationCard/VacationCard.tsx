@@ -29,7 +29,7 @@ function VacationCard(props: VacationCardProps): JSX.Element {
             <p>${props.vacation.price}</p>
             <NavLink to={"/vacations/details/" + props.vacation.vacationID}>
                 <div className="card-picframe">
-                    <img src={appConfig.vacationsUrl + "images/" + props.vacation.imageName} alt={"Picture of " + props.vacation.destination}/>
+                    <img src={appConfig.vacationsUrl + "images/" + props.vacation.imageName} alt={"Picture of " + props.vacation.destination} title={"Picture of " + props.vacation.destination}/>
                 </div>
             </NavLink>
             <br />

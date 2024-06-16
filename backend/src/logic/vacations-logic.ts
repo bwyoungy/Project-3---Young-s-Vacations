@@ -133,7 +133,7 @@ async function updateVacation(vacation:VacationModel):Promise<VacationModel> {
     const info:OkPacket = await dal.execute(sqlQuery);
 
     // Check if ID exists by checking affectedRows of info, if it doesn't throw an error (and quit function)
-    if (info.affectedRows === 0) throw new ResourceNotFoundErrorModel(vacation.vacationID);
+    if (info.affectedRows <= 0) throw new ResourceNotFoundErrorModel(vacation.vacationID);
 
     // Return updated vacation
     return vacation;

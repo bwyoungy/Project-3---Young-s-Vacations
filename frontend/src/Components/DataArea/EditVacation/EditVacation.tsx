@@ -75,6 +75,7 @@ function EditVacation(): JSX.Element {
                 <p>To select a different image, upload it from your device:</p>
                 <input type="file" accept="image/*" {...register("image")}/>
                 
+                {/* Hidden field for imageName so can be sent to backend if user doesn't upload new image */}
                 <input type="hidden" {...register("imageName")}/>
 
                 <br />

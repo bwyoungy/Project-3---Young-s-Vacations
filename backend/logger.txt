@@ -418,3 +418,26 @@
 12:44:54 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
 14:19:45 	 ENOENT: no such file or directory, unlink 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\'6af10153-5bbb-426c-92af-df78e9ae960c.png''-----------------------------------------
 14:26:36 	 ENOENT: no such file or directory, unlink 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\'63e841b0-e72f-4aa5-b2e7-37dd0daf0f5c.jpeg''-----------------------------------------
+18:26:08 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+20:56:37 	 "userName" is required-----------------------------------------
+20:56:45 	 "userName" is required-----------------------------------------
+20:58:29 	 "userName" is required-----------------------------------------
+20:58:36 	 "userName" is required-----------------------------------------
+20:59:17 	 "userName" is required-----------------------------------------
+21:03:43 	 "userName" is required-----------------------------------------
+21:04:53 	 "userName" is required-----------------------------------------
+21:05:56 	 "userName" is required-----------------------------------------
+21:07:01 	 "userName" is required-----------------------------------------
+21:08:19 	 "userName" is required-----------------------------------------
+21:08:44 	 "userName" is required-----------------------------------------
+21:13:28 	 "userName" is required-----------------------------------------
+21:15:44 	 "password" length must be at least 8 characters long-----------------------------------------
+21:24:12 	 Password is wrong for username bw_youngy-----------------------------------------
+21:24:46 	 Password is wrong for username galzy-----------------------------------------
+21:27:50 	 Password is wrong for username galzy-----------------------------------------
+23:22:47 	 Password is wrong for username bearg-----------------------------------------
+0:06:32 	 "password" length must be at least 8 characters long-----------------------------------------
+0:06:37 	 Password is wrong for username umbre-----------------------------------------
+0:10:35 	 Password is wrong for username woofieG-----------------------------------------
+2:43:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+2:44:37 	 Password is wrong for username nivav-----------------------------------------

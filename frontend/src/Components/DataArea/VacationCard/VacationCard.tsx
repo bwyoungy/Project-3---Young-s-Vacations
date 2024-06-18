@@ -4,6 +4,8 @@ import "./VacationCard.css";
 import notify from "../../../Services/NotifyService";
 import vacationService from "../../../Services/VacationsService";
 import appConfig from "../../../Utils/Config";
+import GetRole from "../../../Utils/AuthCheck";
+import RoleModel from "../../../Models/RoleModel";
 
 interface VacationCardProps {
     vacation: VacationModel;
@@ -16,11 +18,13 @@ function VacationCard(props: VacationCardProps): JSX.Element {
         try {
             await vacationService.deleteVacation(vacationID);
             notify.successMsg("Vacation successfully deleted!");
-        } catch (err:any) {
-            notify.errorMsg(err);
+        } catch (error:any) {
+            notify.errorMsg(error);
         }
         window.location.reload();
     }
+
+    const role = GetRole();
 
     return (
         <div className="VacationCard Card">
@@ -33,10 +37,13 @@ function VacationCard(props: VacationCardProps): JSX.Element {
                 </div>
             </NavLink>
             <br />
-            {/* Button to link to editing of vacation - FOR ADMIN ONLY */}
-            <button onClick={() => navigate("/vacations/edit/" + props.vacation.vacationID)}>✎ Edit</button>
-            {/* Button to delete vacation - FOR ADMIN ONLY */}
-            <button onClick={() => deleteVacation(props.vacation.vacationID)}>✗ Delete</button>
+            {/* Buttons to edit and delete vacations - FOR ADMIN ONLY */}
+            {role === RoleModel.Admin && (
+            <>
+                <button onClick={() => navigate("/vacations/edit/" + props.vacation.vacationID)}>✎ Edit</button>
+                <button onClick={() => deleteVacation(props.vacation.vacationID)}>✗ Delete</button>
+            </>
+            )}
         </div>
     );
 }

@@ -19,3 +19,15 @@ export class ValidationErrorModel extends ErrorModel {
         super(msg, 400);
     }
 }
+
+export class AuthenticationErrorModel extends ErrorModel {
+    public constructor(msg:string) {
+        super(msg, 401);
+    }
+}
+
+export class ResourceExistsErrorModel extends ErrorModel {
+    public constructor(msg:string) {
+        super(msg, 409);
+    }
+}

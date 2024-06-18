@@ -6,6 +6,8 @@ import vacationService from "../../../Services/VacationsService";
 import notify from "../../../Services/NotifyService";
 import { NavLink } from "react-router-dom";
 import appConfig from "../../../Utils/Config";
+import GetRole from "../../../Utils/AuthCheck";
+import RoleModel from "../../../Models/RoleModel";
 
 function VacationDetails(): JSX.Element {
 
@@ -24,15 +26,27 @@ function VacationDetails(): JSX.Element {
             await vacationService.deleteVacation(vacationID);
             notify.successMsg("Vacation successfully deleted!");
             
-        } catch (err:any) {
-            notify.errorMsg(err);
+        } catch (error:any) {
+            notify.errorMsg(error);
         }
         navigate("/vacations");
     }
 
+    const role = GetRole();
+
     return (
         <div className="VacationDetails">
 			<h2>Vacation Details</h2>
+
+            {/* Check if user is logged in */}
+            {!role ?
+            // Display for logged out (guest)
+            <>
+                <h3>Only registered users can view details of vacations. You can <NavLink to="/register">register here</NavLink> or if you're already a member <NavLink to="/login">login here</NavLink>.</h3>
+            </>
+            :
+            // Display for logged in user
+            <>
             <h4>{vacation.destination}</h4>
             <p>{new Date(vacation.startDate).toLocaleDateString()} → {new Date(vacation.endDate).toLocaleDateString()}</p>
             <div className="det-picframe">
@@ -41,12 +55,17 @@ function VacationDetails(): JSX.Element {
             <p>{vacation.description}</p>
             <p>${vacation.price}</p>
 
-            {/* Button to link to editing of vacation - FOR ADMIN ONLY */}
-            <button onClick={() => navigate("/vacations/edit/" + vacation.vacationID)}>✎ Edit</button>
-            {/* Button to delete vacation - FOR ADMIN ONLY */}
-            <button onClick={() => deleteVacation(vacation.vacationID)}>✗ Delete</button>
+            {/* Buttons to edit and delete vacations - FOR ADMIN ONLY */}
+            {role === RoleModel.Admin && (
+            <>
+                <button onClick={() => navigate("/vacations/edit/" + vacation.vacationID)}>✎ Edit</button>
+                <button onClick={() => deleteVacation(vacation.vacationID)}>✗ Delete</button>
+            </>
+            )}
             <br />
             <NavLink to="/vacations">Return to vacations</NavLink>
+            </>
+            }
         </div>
     );
 }

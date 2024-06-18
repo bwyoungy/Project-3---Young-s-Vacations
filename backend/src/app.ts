@@ -3,6 +3,7 @@ import express from "express";
 import routeNotFound from "./middleware/route-not-found";
 import catchAll from "./middleware/catch-all";
 import appConfig from "./utils/app-config";
+import authController from "./controllers/auth-controller"
 import vacationsController from "./controllers/vacations-controller";
 import expressFileUpload from "express-fileupload"
 
@@ -17,6 +18,7 @@ server.use(express.json());
 server.use(expressFileUpload());
 
 // Route api to the controller
+server.use("/api", authController);
 server.use("/api", vacationsController);
 
 // Route error in finding route and other errors

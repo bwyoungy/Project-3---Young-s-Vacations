@@ -6,6 +6,9 @@ import { useForm } from "react-hook-form";
 import vacationService from "../../../Services/VacationsService";
 import notify from "../../../Services/NotifyService";
 import appConfig from "../../../Utils/Config";
+import GetRole from "../../../Utils/AuthCheck";
+import RoleModel from "../../../Models/RoleModel";
+import { NavLink } from "react-router-dom";
 
 function EditVacation(): JSX.Element {
     const params = useParams();
@@ -35,52 +38,73 @@ function EditVacation(): JSX.Element {
             await vacationService.updateVacation(vacation);
             notify.successMsg("Vacation updated successfully!");
             navigate("/vacations");
-        } catch (err:any) {
-            notify.errorMsg(err);
+        } catch (error:any) {
+            notify.errorMsg(error);
         }
     }
 
+    const role = GetRole();
+
     return (
         <div className="EditVacation">
-			<form onSubmit={handleSubmit(send)}>
-                <h2>Edit Vacation</h2>
+            {/* Display for logged out guest */}
+            {!role && (
+            <>
+                <h2>Only admins can edit vacations. You can <NavLink to="/login">login here</NavLink>.</h2>
+            </>
+            )}
 
-                <input type="hidden" {...register("vacationID")} />
+            {/* Display for regular user */}
+            {role === RoleModel.User && (
+            <>
+                <h2>Only admins can edit vacations. You can <NavLink to="/vacations">view vacations here</NavLink>.</h2>
+            </>
+            )}
+            
+            {/* Display for admin */}
+            {role === RoleModel.Admin && (
+            <>
+                <form onSubmit={handleSubmit(send)}>
+                    <h2>Edit Vacation</h2>
 
-                <label>Start date: </label>
-                <input type="date" {...register("startDate", VacationModel.startDateValidation)}/>
-                <p className="error">{formState.errors.startDate?.message}</p>
+                    <input type="hidden" {...register("vacationID")} />
 
-                <label>End date: </label>
-                <input type="date" {...register("endDate", VacationModel.endDateValidation)}/>
-                <p className="error">{formState.errors.endDate?.message}</p>
-                
-                <label>Destination: </label>
-                <input type="text" {...register("destination", VacationModel.destinationValidation)}/>
-                <p className="error">{formState.errors.destination?.message}</p>
-                
-                <label>Description: </label>
-                <input type="text" {...register("description", VacationModel.descriptionValidation)}/>
-                <p className="error">{formState.errors.description?.message}</p>
+                    <label>Start date: </label>
+                    <input type="date" {...register("startDate", VacationModel.startDateValidation)}/>
+                    <p className="error">{formState.errors.startDate?.message}</p>
 
-                <label>Price: $</label>
-                <input type="number" step={1} {...register("price", VacationModel.priceValidation)}/>
-                <p className="error">{formState.errors.price?.message}</p>
+                    <label>End date: </label>
+                    <input type="date" {...register("endDate", VacationModel.endDateValidation)}/>
+                    <p className="error">{formState.errors.endDate?.message}</p>
+                    
+                    <label>Destination: </label>
+                    <input type="text" {...register("destination", VacationModel.destinationValidation)}/>
+                    <p className="error">{formState.errors.destination?.message}</p>
+                    
+                    <label>Description: </label>
+                    <input type="text" {...register("description", VacationModel.descriptionValidation)}/>
+                    <p className="error">{formState.errors.description?.message}</p>
 
-                <label>Image: </label>
-                <p>This is a preview of the current image for this vacation.</p>
-                <div className="edit-picframe">
-                    <img src={appConfig.vacationsUrl + "images/" + vacation.imageName} alt={"Image preview for " + vacation.destination} title={"Image preview for " + vacation.destination} />
-                </div>
-                <p>To select a different image, upload it from your device:</p>
-                <input type="file" accept="image/*" {...register("image")}/>
-                
-                {/* Hidden field for imageName so can be sent to backend if user doesn't upload new image */}
-                <input type="hidden" {...register("imageName")}/>
+                    <label>Price: $</label>
+                    <input type="number" step={1} {...register("price", VacationModel.priceValidation)}/>
+                    <p className="error">{formState.errors.price?.message}</p>
 
-                <br />
-                <button>Update Vacation</button>
-            </form>
+                    <label>Image: </label>
+                    <p>This is a preview of the current image for this vacation.</p>
+                    <div className="edit-picframe">
+                        <img src={appConfig.vacationsUrl + "images/" + vacation.imageName} alt={"Image preview for " + vacation.destination} title={"Image preview for " + vacation.destination} />
+                    </div>
+                    <p>To select a different image, upload it from your device:</p>
+                    <input type="file" accept="image/*" {...register("image")}/>
+                    
+                    {/* Hidden field for imageName so can be sent to backend if user doesn't upload new image */}
+                    <input type="hidden" {...register("imageName")}/>
+
+                    <br />
+                    <button>Update Vacation</button>
+                </form>
+            </>
+            )}
         </div>
     );
 }

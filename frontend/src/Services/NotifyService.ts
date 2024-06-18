@@ -7,20 +7,20 @@ class NotifyService {
         this.notification.success(message);
     }
     
-    public errorMsg(err:any):void {
-        console.log(this.extractErrMsg(err));
+    public errorMsg(error:any):void {
+        console.log(this.extractErrMsg(error));
         
-        this.notification.error(this.extractErrMsg(err));
+        this.notification.error(this.extractErrMsg(error));
     }
 
-    private extractErrMsg(err:any):string {
-        if  (typeof err === "string") return err;
+    private extractErrMsg(error:any):string {
+        if  (typeof error === "string") return error;
 
-        if (typeof err.response?.data === "string") return err.response.data;
+        if (typeof error.response?.data === "string") return error.response.data;
 
-        if (Array.isArray(err.response?.data)) return err.response.data[0];
+        if (Array.isArray(error.response?.data)) return error.response.data[0];
 
-        if (typeof err.message === "string") return err.message;
+        if (typeof error.message === "string") return error.message;
 
         return "Some error, please try again";
     }

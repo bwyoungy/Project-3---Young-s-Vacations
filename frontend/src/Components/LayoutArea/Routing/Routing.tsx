@@ -6,11 +6,23 @@ import VacationsList from "../../DataArea/VacationsList/VacationsList";
 import AddVacation from "../../DataArea/AddVacation/AddVacation";
 import VacationDetails from "../../DataArea/VacationDetails/VacationDetails";
 import EditVacation from "../../DataArea/EditVacation/EditVacation";
+import Register from "../../AuthArea/Register/Register";
+import Login from "../../AuthArea/Login/Login";
+import Logout from "../../AuthArea/Logout/Logout";
 
 function Routing(): JSX.Element {
     return (
         <div className="Routing">
 			<Routes>
+                {/* Register */}
+                <Route path="/register" element={<Register/>}/>
+
+                {/* Login */}
+                <Route path="/login" element={<Login/>}/>
+
+                {/* Logout */}
+                <Route path="/logout" element={<Logout/>}/>
+                
                 {/* Home */}
                 <Route path="/home" element={<Home/>}/>
 

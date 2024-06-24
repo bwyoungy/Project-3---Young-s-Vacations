@@ -1,3 +1,5 @@
+import FollowModel from "./FollowModel";
+
 class VacationModel {
     public vacationID:number;
     public destination:string;
@@ -7,6 +9,7 @@ class VacationModel {
     public price:number;
     public imageName:string;
     public image: FileList;
+    public follows: FollowModel[];
 
     public static destinationValidation = {
         required: {value: true, message: "Please write a destination"},

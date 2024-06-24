@@ -4,6 +4,7 @@ import VacationModel from "../models/vacation-model";
 import dal from "../utils/dal";
 import { v4 as uuid } from "uuid"; // import v4 function and rename to uuid
 import { promises } from "fs";
+import followsLogic from "./follows-logic";
 
 // Function to get all vacations
 async function getAllVacations():Promise<VacationModel[]> {
@@ -11,9 +12,13 @@ async function getAllVacations():Promise<VacationModel[]> {
     const sqlQuery = `
         SELECT vacationID, destination, description, DATE_FORMAT(startDate, "%Y-%m-%d") as "startDate", DATE_FORMAT(endDate, "%Y-%m-%d") as "endDate", price, imageName
         FROM vacations;`;
-
+    
     // Execute SQL query and save in variable to be returned
     const vacations = await dal.execute(sqlQuery);
+    
+    // For each vacation, add an array of follows connected to it
+    for (const vacation of vacations) vacation.follows = await followsLogic.getFollowsByVacation(vacation.vacationID);
+
     return vacations;
 }
 
@@ -30,7 +35,10 @@ async function getVacationById(id:number):Promise<VacationModel> {
     const vacation = await dal.execute(sqlQuery, [id]);
 
     // If vacation not found throw an error that it doesn't exist (and quit function)
-    if (!vacation) throw new ResourceNotFoundErrorModel(id);
+    if (!vacation) throw new ResourceNotFoundErrorModel(`ID ${id}`);
+
+    // Add array of follows connected to vacation
+    vacation.follows = await followsLogic.getFollowsByVacation(vacation.vacationID);
 
     return vacation;
 }
@@ -133,12 +141,13 @@ async function updateVacation(vacation:VacationModel):Promise<VacationModel> {
     const info:OkPacket = await dal.execute(sqlQuery, [vacation.destination, vacation.description, vacation.startDate, vacation.endDate, vacation.price, vacation.imageName, vacation.vacationID]);
 
     // Check if ID exists by checking affectedRows of info, if it doesn't throw an error (and quit function)
-    if (info.affectedRows <= 0) throw new ResourceNotFoundErrorModel(vacation.vacationID);
+    if (info.affectedRows <= 0) throw new ResourceNotFoundErrorModel(`ID ${vacation.vacationID}`);
 
     // Return updated vacation
     return vacation;
 }
 
+// Function to delete a vacation by id
 async function deleteVacation(id:number):Promise<void> {
     // Create SQL query - selects all columns from vacations table for specific id, with dates formatted
     const imgSqlQuery = `
@@ -151,7 +160,7 @@ async function deleteVacation(id:number):Promise<void> {
     const imgInfo = await dal.execute(imgSqlQuery, [id]);
 
     // If there isn't data for id being checked to delete, throw error 
-    if(!imgInfo[0]) throw new ResourceNotFoundErrorModel(id);
+    if(!imgInfo[0]) throw new ResourceNotFoundErrorModel(`ID ${id}`);
     
     // Create SQL query - delete vacation from table based on id passed
     const sqlQuery = `

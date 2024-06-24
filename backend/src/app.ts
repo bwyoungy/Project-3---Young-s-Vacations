@@ -5,6 +5,7 @@ import catchAll from "./middleware/catch-all";
 import appConfig from "./utils/app-config";
 import authController from "./controllers/auth-controller"
 import vacationsController from "./controllers/vacations-controller";
+import followsController from "./controllers/follows-controller";
 import expressFileUpload from "express-fileupload"
 
 // Start express server
@@ -20,6 +21,7 @@ server.use(expressFileUpload());
 // Route api to the controller
 server.use("/api", authController);
 server.use("/api", vacationsController);
+server.use("/api", followsController);
 
 // Route error in finding route and other errors
 server.use("*", routeNotFound);

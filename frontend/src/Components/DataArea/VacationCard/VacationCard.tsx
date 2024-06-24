@@ -6,6 +6,10 @@ import vacationService from "../../../Services/VacationsService";
 import appConfig from "../../../Utils/Config";
 import GetRole from "../../../Utils/AuthCheck";
 import RoleModel from "../../../Models/RoleModel";
+import followService from "../../../Services/FollowsService";
+import { authStore } from "../../../Redux/AuthState";
+import { useEffect, useState } from "react";
+import FollowModel from "../../../Models/FollowModel";
 
 interface VacationCardProps {
     vacation: VacationModel;
@@ -24,7 +28,32 @@ function VacationCard(props: VacationCardProps): JSX.Element {
         window.location.reload();
     }
 
+    async function addFolow(follow:FollowModel) {
+        try {
+            await followService.addFollow(follow);
+            notify.successMsg("Vacation successfully followed!");
+        } catch (error:any) {
+            notify.errorMsg(error);
+        }
+        window.location.reload();
+    }
+
+    async function unfollow(follow:FollowModel) {
+        try {
+            await followService.unfollow(follow);
+            notify.successMsg("Vacation successfully unfollowed!");
+        } catch (error:any) {
+            notify.errorMsg(error);
+        }
+        window.location.reload();
+    }
+
     const role = GetRole();
+    const currUser = authStore.getState().user;
+
+    function checkFollows(vacation:VacationModel) : boolean {
+        return vacation.follows.some(f => f.username === currUser.username);
+    }
 
     return (
         <div className="VacationCard Card">
@@ -37,6 +66,23 @@ function VacationCard(props: VacationCardProps): JSX.Element {
                 </div>
             </NavLink>
             <br />
+            {/* Buttons to follow/unfollow vacation - FOR USER ONLY */}
+            {role === RoleModel.User && (
+            <>
+                {/* Check if user follows vacation */}
+                {checkFollows(props.vacation) ?
+                // Display if user follows vacation
+                <>
+                <button onClick={() => unfollow(props.vacation.follows.find(f => f.username === currUser.username))}>Unfollow</button>
+                </>
+                :
+                // Display if user doesn't follow vacation
+                <>
+                <button onClick={() => addFolow(new FollowModel(currUser.username, props.vacation.vacationID))}>Follow</button>
+                </>
+                }
+            </>
+            )}
             {/* Buttons to edit and delete vacations - FOR ADMIN ONLY */}
             {role === RoleModel.Admin && (
             <>

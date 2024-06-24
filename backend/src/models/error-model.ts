@@ -9,8 +9,8 @@ export class RouteNotFoundErrorModel extends ErrorModel {
 }
 
 export class ResourceNotFoundErrorModel extends ErrorModel {
-    public constructor(id:number) {
-        super(`ID ${id} not found`, 404)
+    public constructor(resource:string) {
+        super(`${resource} not found`, 404)
     }
 }
 

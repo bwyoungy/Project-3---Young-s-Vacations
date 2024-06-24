@@ -441,3 +441,82 @@
 0:10:35 	 Password is wrong for username woofieG-----------------------------------------
 2:43:02 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
 2:44:37 	 Password is wrong for username nivav-----------------------------------------
+15:41:24 	 Follow of vacation 1 by user nivav is already in database-----------------------------------------
+17:39:35 	 Cannot set properties of null (setting 'username')-----------------------------------------
+20:14:56 	 "password" length must be at least 8 characters long-----------------------------------------
+0:40:19 	 Route /api/follows/galzy doesn't exist-----------------------------------------
+4:04:36 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+4:05:01 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+4:05:01 	 ID 55 not found-----------------------------------------
+4:06:21 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+4:06:21 	 ID 55 not found-----------------------------------------
+4:06:27 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+4:06:47 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+4:07:36 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+4:07:36 	 ID 55 not found-----------------------------------------
+4:09:29 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:09:29 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:09:29 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:09:29 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:09:29 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:09:29 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:10:14 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:10:14 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:10:14 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:10:14 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:10:14 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:10:14 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:10:48 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:10:48 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:10:48 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:10:48 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:10:48 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:10:48 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:10:55 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:10:55 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:10:55 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:10:55 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:10:55 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:10:55 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:11:14 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:11:14 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:11:14 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:11:14 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:11:14 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:11:14 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:11:57 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:11:57 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:11:57 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:11:57 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:11:57 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:11:57 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:12:01 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:12:01 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:12:01 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:12:01 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:12:01 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:12:01 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:12:25 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:12:25 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:12:25 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:12:25 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:12:25 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:12:25 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:12:35 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:12:35 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:12:35 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:12:35 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:12:35 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:12:35 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:13:58 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:13:58 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:13:58 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:13:58 	 woofieG's follow for ID 4 not found-----------------------------------------
+4:13:58 	 woofieG's follow for ID 1 not found-----------------------------------------
+4:13:58 	 woofieG's follow for ID 5 not found-----------------------------------------
+4:14:08 	 Cannot read properties of undefined (reading '0')-----------------------------------------
+4:14:08 	 Cannot read properties of undefined (reading '0')-----------------------------------------
+4:14:08 	 Cannot read properties of undefined (reading '0')-----------------------------------------
+4:14:08 	 Cannot read properties of undefined (reading '0')-----------------------------------------
+4:14:08 	 Cannot read properties of undefined (reading '0')-----------------------------------------
+4:14:08 	 Cannot read properties of undefined (reading '0')-----------------------------------------

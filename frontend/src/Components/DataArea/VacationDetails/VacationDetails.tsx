@@ -53,7 +53,7 @@ function VacationDetails(): JSX.Element {
             // Display for logged in user
             <>
             <h4>{vacation.destination}</h4>
-            <p>Followers ({vacation.follows.length}): {vacation.follows.map(f => f.username).join(", ")}</p>
+            <p>Followers ({vacation.follows.length}): {vacation.follows.length > 0 ? vacation.follows.map(f => f.username).join(", ") : "None"}</p>
             <p>{new Date(vacation.startDate).toLocaleDateString()} → {new Date(vacation.endDate).toLocaleDateString()}</p>
             <div className="det-picframe">
                 <img src={appConfig.vacationsUrl + "images/" + vacation.imageName} alt={"Picture of " + vacation.destination} title={"Picture of " + vacation.destination}/>

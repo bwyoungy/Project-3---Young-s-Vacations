@@ -520,3 +520,10 @@
 4:14:08 	 Cannot read properties of undefined (reading '0')-----------------------------------------
 4:14:08 	 Cannot read properties of undefined (reading '0')-----------------------------------------
 4:14:08 	 Cannot read properties of undefined (reading '0')-----------------------------------------
+21:10:02 	 "password" length must be at least 8 characters long-----------------------------------------
+21:11:11 	 "password" length must be at least 8 characters long-----------------------------------------
+21:11:29 	 "password" length must be at least 8 characters long-----------------------------------------
+21:11:45 	 "password" is not allowed to be empty-----------------------------------------
+21:12:25 	 "username" is not allowed to be empty-----------------------------------------
+23:06:13 	 "username" is not allowed to be empty-----------------------------------------
+23:08:28 	 "username" is not allowed to be empty-----------------------------------------

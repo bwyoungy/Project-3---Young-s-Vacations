@@ -34,8 +34,9 @@ class UserModel {
 
     public static passwordValidation = {
         required: {value: true, message: "Please write a password"},
-        minLength: {value: 1, message: "Password must be at least one character"},
-        maxLength: {value: 500, message: "Password can't be more than 500 characters"}
+        minLength: {value: 8, message: "Password must be at least eight characters"},
+        maxLength: {value: 500, message: "Password can't be more than 500 characters"},
+        pattern: {value: /^(?=.*[a-zA-Z])(?=.*\d).+/, message: "Password must contain both letters and numbers"}
     }
 }
 

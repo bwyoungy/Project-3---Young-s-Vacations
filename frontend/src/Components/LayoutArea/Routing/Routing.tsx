@@ -9,6 +9,7 @@ import EditVacation from "../../DataArea/EditVacation/EditVacation";
 import Register from "../../AuthArea/Register/Register";
 import Login from "../../AuthArea/Login/Login";
 import Logout from "../../AuthArea/Logout/Logout";
+import Report from "../../DataArea/Report/Report";
 
 function Routing(): JSX.Element {
     return (
@@ -37,6 +38,9 @@ function Routing(): JSX.Element {
 
                 {/* Edit Vacation */}
                 <Route path="/vacations/edit/:vacationID" element={<EditVacation/>}/>
+
+                {/* Report */}
+                <Route path="/report" element={<Report/>}/>
 
                 {/* Set default page */}
                 <Route path="/" element={<Navigate to="/home"/>}/>

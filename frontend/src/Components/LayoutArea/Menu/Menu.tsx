@@ -14,7 +14,9 @@ function Menu(): JSX.Element {
             {role === RoleModel.Admin && (
                 <>
                     <span>|</span>
-                    <NavLink to="vacations/add">Add Vacation</NavLink>
+                    <NavLink to="/vacations/add">Add Vacation</NavLink>
+                    <span>|</span>
+                    <NavLink to="/report">Report</NavLink>
                 </>
                 )}
         </div>

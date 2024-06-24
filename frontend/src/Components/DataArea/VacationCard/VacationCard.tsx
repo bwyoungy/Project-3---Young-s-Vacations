@@ -19,6 +19,11 @@ function VacationCard(props: VacationCardProps): JSX.Element {
     const navigate = useNavigate();
 
     async function deleteVacation(vacationID:number) {
+        // Display confirmation dialog
+        const isConfirmed = window.confirm("Are you sure you want to delete this vacation?");
+        // Don't delete if user clicks "cancel"
+        if (!isConfirmed) return;
+
         try {
             await vacationService.deleteVacation(vacationID);
             notify.successMsg("Vacation successfully deleted!");

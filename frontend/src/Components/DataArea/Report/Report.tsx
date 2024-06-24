@@ -46,6 +46,27 @@ function Report(): JSX.Element {
         plugins: {legend: {display: false}}
     };
 
+    // Function to export data as CSV
+    function exportToCSV() {
+        // Define info
+        const headers = ["Destination", "Amount of followers"];
+        const rows = vacations.map(v => [v.destination, v.follows.length]);
+
+        // Construct CSV content
+        let csvContent = "data:text/csv;charset=utf-8,"
+                        + headers.join(",") + "\n"
+                        + rows.map(r => r.join(",")).join("\n");
+
+        // Create temporary anchor element and trigger download
+        const encodedUri = encodeURI(csvContent);
+        const link = document.createElement("a");
+        link.setAttribute("href", encodedUri);
+        link.setAttribute("download", `vacations report ${new Date().toLocaleString()}.csv`);
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    }
+
     return (
         <div className="Report">
             {/* Display for logged out guest */}
@@ -67,6 +88,7 @@ function Report(): JSX.Element {
             <>
                 <div className="chart-container" style={{ height: '400px', width: '80%', margin: 'auto' }}>
                     <Bar data={data} options={options}/>
+                    <button onClick={exportToCSV}>Export to CSV file</button>
                 </div>
             </>
             )}

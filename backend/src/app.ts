@@ -8,6 +8,7 @@ import vacationsController from "./controllers/vacations-controller";
 import followsController from "./controllers/follows-controller";
 import expressFileUpload from "express-fileupload"
 import sanitize from "./middleware/sanitize";
+import expressRateLimit from "express-rate-limit"
 
 // Start express server
 const server = express();
@@ -18,6 +19,12 @@ server.use(express.json());
 
 // Sanitize request body - Remove HTML and script tags
 server.use(sanitize);
+
+// Limit user use to defend against DoS attacks
+server.use("/api", expressRateLimit({
+    max: 20, // maximum requests per client
+    windowMs: 1000 // Time window for maximum requests
+}));
 
 // Add handling of uploaded files
 server.use(expressFileUpload());

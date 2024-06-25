@@ -2,6 +2,7 @@ import express, { NextFunction, Request, Response } from "express";
 import vacationsLogic from "../logic/vacations-logic";
 import VacationModel from "../models/vacation-model";
 import path from "path";
+import verifyAdmin from "../middleware/verify-admin";
 
 // Create express router
 const router = express.Router();
@@ -28,7 +29,7 @@ router.get("/vacations/:id", async(request:Request, response:Response, next:Next
 });
 
 // Route to add a new vacation
-router.post("/vacations", async(request:Request, response:Response, next:NextFunction)=>{
+router.post("/vacations", verifyAdmin, async(request:Request, response:Response, next:NextFunction)=>{
     try {
         // Set uploaded file in body of request
         request.body.image = request.files?.image;
@@ -43,7 +44,7 @@ router.post("/vacations", async(request:Request, response:Response, next:NextFun
 });
 
 // Route to update a vacation
-router.put("/vacations/:id", async(request:Request,response:Response,next:NextFunction)=>{
+router.put("/vacations/:id", verifyAdmin, async(request:Request,response:Response,next:NextFunction)=>{
     try {
         // Set uploaded file in body of request
         request.body.image = request.files?.image;
@@ -59,7 +60,7 @@ router.put("/vacations/:id", async(request:Request,response:Response,next:NextFu
 });
 
 // Route to delete a vacation
-router.delete("/vacations/:id", async(request:Request,response:Response,next:NextFunction)=>{
+router.delete("/vacations/:id", verifyAdmin, async(request:Request,response:Response,next:NextFunction)=>{
     try {
         await vacationsLogic.deleteVacation(+request.params.id);
         response.sendStatus(204);

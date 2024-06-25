@@ -14,7 +14,7 @@ import expressRateLimit from "express-rate-limit"
 const server = express();
 
 // Add CORS and JSON use
-server.use(cors());
+server.use(cors({origin: appConfig.frontEndUrl}));
 server.use(express.json());
 
 // Sanitize request body - Remove HTML and script tags

@@ -5,6 +5,7 @@ class AppConfig {
     public database = "young-vacations";
 
     public port = 3001;
+    public frontEndUrl = "http://localhost:3000";
 }
 
 const appConfig = new AppConfig();

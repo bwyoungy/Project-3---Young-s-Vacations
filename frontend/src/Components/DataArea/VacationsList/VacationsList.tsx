@@ -30,6 +30,11 @@ function VacationsList(): JSX.Element {
         try {
             // Fetch all vacations from backend
             const allVacations = await vacationService.getAllVacations();
+            
+            // Sort vacations by start date
+            allVacations.sort((a, b) => 
+                (new Date(a.startDate).getDate() + (new Date(a.startDate).getMonth()+1)*100 + new Date(a.startDate).getFullYear()*10000) 
+            - (new Date(b.startDate).getDate() + (new Date(b.startDate).getMonth()+1)*100 + new Date(b.startDate).getFullYear()*10000))
         
             // Select filter case based on user's choice
             switch (currFilter) {

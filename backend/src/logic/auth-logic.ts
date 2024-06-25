@@ -24,6 +24,9 @@ async function register(user:UserModel):Promise<string> {
     const emailExists = await checkEmailExists(user.email);
     if(emailExists) throw new ResourceExistsErrorModel(`${user.email} already has a registered user`);
 
+    // Hash user password
+    user.password = cyber.hash(user.password);
+
     // Create SQL query to add user
     const sqlQuery = `
         INSERT INTO users(username, email, firstName, lastName, password, role)
@@ -42,6 +45,9 @@ async function login(creds:CredentialsModel):Promise<string> {
     const errors = creds.validate();
     // If there were errors in validation, throw an error (and quit function)
     if (errors) throw new ValidationErrorModel(errors);
+
+    // Hash password
+    creds.password = cyber.hash(creds.password);
     
     // Create SQL query to get user matching the credentials
     const sqlQuery = `

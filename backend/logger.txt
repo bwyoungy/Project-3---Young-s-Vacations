@@ -527,3 +527,9 @@
 21:12:25 	 "username" is not allowed to be empty-----------------------------------------
 23:06:13 	 "username" is not allowed to be empty-----------------------------------------
 23:08:28 	 "username" is not allowed to be empty-----------------------------------------
+5:14:07 	 Password is wrong for username vlad-----------------------------------------
+5:14:28 	 Password is wrong for username mintyMarco-----------------------------------------
+5:15:35 	 "password" length must be at least 8 characters long-----------------------------------------
+5:15:47 	 "password" length must be at least 8 characters long-----------------------------------------
+5:19:28 	 beargr has already been used-----------------------------------------
+5:23:59 	 galzy has already been used-----------------------------------------

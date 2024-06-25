@@ -2,12 +2,16 @@ import { Request } from "express";
 import UserModel from "../models/user-model";
 import jwt from "jsonwebtoken";
 import RoleModel from "../models/role-model";
+import crypto from "crypto"
 
 // Secret key for REST API
 const secretKey = "InsideOut";
 
 // Function to get a new token
 function getNewToken(user:UserModel):string {
+    // Delete password so as not to return to frontend
+    delete user.password;
+
     // Container for user object
     const container = {user};
     // Set experation  time
@@ -54,6 +58,17 @@ function verifyToken(request:Request):Promise<boolean> {
     });
 }
 
+const salt = "DeadSeaVacation";
+
+function hash(plainText:string):string {
+    if(!plainText) return null;
+
+    // Hash with salt
+    const hashedText = crypto.createHmac("sha512", salt).update(plainText).digest("hex");
+
+    return hashedText;
+}
+
 async function verifyIsAdmin(request:Request):Promise<boolean> {
     // Check if user is logged in
     const isLoggedIn = await verifyToken(request);
@@ -75,5 +90,6 @@ async function verifyIsAdmin(request:Request):Promise<boolean> {
 export default { 
     getNewToken,
     verifyToken,
+    hash,
     verifyIsAdmin
 };

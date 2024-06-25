@@ -7,6 +7,7 @@ import authController from "./controllers/auth-controller"
 import vacationsController from "./controllers/vacations-controller";
 import followsController from "./controllers/follows-controller";
 import expressFileUpload from "express-fileupload"
+import sanitize from "./middleware/sanitize";
 
 // Start express server
 const server = express();
@@ -14,6 +15,9 @@ const server = express();
 // Add CORS and JSON use
 server.use(cors());
 server.use(express.json());
+
+// Sanitize request body - Remove HTML and script tags
+server.use(sanitize);
 
 // Add handling of uploaded files
 server.use(expressFileUpload());

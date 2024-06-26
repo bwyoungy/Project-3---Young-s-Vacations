@@ -31,3 +31,9 @@ export class ResourceExistsErrorModel extends ErrorModel {
         super(msg, 409);
     }
 }
+
+export class ForbiddenErrorModel extends ErrorModel {
+    public constructor(msg:string) {
+        super(msg, 403);
+    }
+}

@@ -10,6 +10,7 @@ import Register from "../../AuthArea/Register/Register";
 import Login from "../../AuthArea/Login/Login";
 import Logout from "../../AuthArea/Logout/Logout";
 import Report from "../../DataArea/Report/Report";
+import UsersList from "../../UsersArea/UsersList/UsersList";
 
 function Routing(): JSX.Element {
     return (
@@ -41,6 +42,9 @@ function Routing(): JSX.Element {
 
                 {/* Report */}
                 <Route path="/report" element={<Report/>}/>
+
+                {/* Manage users */}
+                <Route path="/users" element={<UsersList/>}/>
 
                 {/* Set default page */}
                 <Route path="/" element={<Navigate to="/home"/>}/>

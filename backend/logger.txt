@@ -533,3 +533,42 @@
 5:15:47 	 "password" length must be at least 8 characters long-----------------------------------------
 5:19:28 	 beargr has already been used-----------------------------------------
 5:23:59 	 galzy has already been used-----------------------------------------
+12:49:14 	 Not an admin!-----------------------------------------
+13:08:58 	 Route /api/users/promote/woofieG doesn't exist-----------------------------------------
+13:18:16 	 Route /api/users/woofieG/promote doesn't exist-----------------------------------------
+13:24:39 	 ER_PARSE_ERROR: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '"admin' at line 3-----------------------------------------
+13:25:41 	 Can't demote admin since there has to remain at least one admin-----------------------------------------
+13:50:47 	 Not an admin!-----------------------------------------
+13:54:05 	 Can't demote admin since there has to remain at least one admin-----------------------------------------
+13:54:58 	 Can't demote admin nivav since there has to remain at least one admin-----------------------------------------
+15:41:12 	 Not an admin!-----------------------------------------
+15:41:27 	 Not an admin!-----------------------------------------
+15:41:43 	 Not an admin!-----------------------------------------
+15:44:42 	 Not an admin!-----------------------------------------
+15:45:56 	 Not an admin!-----------------------------------------
+15:47:27 	 Not an admin!-----------------------------------------
+15:47:47 	 Password is wrong for username nivav-----------------------------------------
+21:41:27 	 Password is wrong for username nivav-----------------------------------------
+21:41:55 	 Not an admin!-----------------------------------------
+21:42:52 	 Not an admin!-----------------------------------------
+21:43:57 	 Not an admin!-----------------------------------------
+21:45:03 	 Not an admin!-----------------------------------------
+21:45:10 	 Not an admin!-----------------------------------------
+11:55:34 	 Not an admin!-----------------------------------------
+11:59:28 	 Not an admin!-----------------------------------------
+12:00:16 	 Not an admin!-----------------------------------------
+12:08:52 	 Not an admin!-----------------------------------------
+12:20:15 	 Not an admin!-----------------------------------------
+12:20:42 	 Not an admin!-----------------------------------------
+12:27:01 	 Not an admin!-----------------------------------------
+12:29:55 	 Not an admin!-----------------------------------------
+12:30:49 	 Not an admin!-----------------------------------------
+13:15:03 	 Not an admin!-----------------------------------------
+13:23:24 	 Not an admin!-----------------------------------------
+13:24:13 	 Not an admin!-----------------------------------------
+13:27:19 	 Not an admin!-----------------------------------------
+13:58:33 	 Not an admin!-----------------------------------------
+15:37:18 	 Can't delete admin oranjeFear since there has to remain at least one admin-----------------------------------------
+15:37:28 	 Can't delete admin oranjeFear since there has to remain at least one admin-----------------------------------------
+15:37:51 	 Can't delete admin oranjeFear since there has to remain at least one admin-----------------------------------------
+15:44:09 	 Can't delete admin nivav since there has to remain at least one admin-----------------------------------------

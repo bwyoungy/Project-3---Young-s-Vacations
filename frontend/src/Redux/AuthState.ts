@@ -9,6 +9,7 @@ export class AuthState {
 
     public constructor() {
         this.token = sessionStorage.getItem("token");
+        
         if (this.token) {
             const container: {user: UserModel} = jwtDecode(this.token);
             this.user = container.user;

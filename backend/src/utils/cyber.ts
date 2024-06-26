@@ -10,16 +10,17 @@ const secretKey = "InsideOut";
 // Function to get a new token
 function getNewToken(user:UserModel):string {
     // Delete password so as not to return to frontend
-    delete user.password;
+    delete user.password;    
 
     // Container for user object
     const container = {user};
+
     // Set experation  time
     const options = {expiresIn: "3h"};
-
+    
     // Generate token
     const token = jwt.sign(container, secretKey, options);
-
+    
     return token;
 }
 
@@ -30,6 +31,7 @@ function verifyToken(request:Request):Promise<boolean> {
             // Authorization header: "Bearer the-token"
 
             const header = request.header("authorization");
+            
             if(!header) {
                 resolve(false);
                 return;

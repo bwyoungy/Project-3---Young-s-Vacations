@@ -1,0 +1,36 @@
+/* Styles for the entire table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px; /* Adjust as needed */
+  }
+  
+  /* Styles for table header */
+  thead {
+    background-color: #d1cd5c;
+  }
+  
+  /* Styles for table header cells */
+  th {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid black;
+    align-items: center;
+  }
+  
+  /* Styles for table body rows */
+  tbody tr:nth-child(even) {
+    background-color: #d1cd5c; /* Alternate row color */
+  }
+  
+  /* Styles for table body cells */
+  td {
+    padding: 10px;
+    border: 1px solid black;
+  }
+  
+  /* Hover effect on rows */
+  tbody tr:hover {
+    background-color: #fffa6f; /* Light yellow background on hover */
+  }
+  

@@ -15,7 +15,7 @@ function VacationsList(): JSX.Element {
     const[filter, setFilter] = useState<string>("all");
 
     useEffect(()=>{
-        vacationService.getAllVacations()
+        getAllVacationsSorted()
         .then(vacations => setVacations(vacations))
         .catch(err => notify.errorMsg(err));
     },[])
@@ -23,10 +23,8 @@ function VacationsList(): JSX.Element {
     const role = GetRole();
     const currUser = authStore.getState().user;
 
-    const handleSelectChange = async (event:ChangeEvent<HTMLSelectElement>) => {
-        // Store current filter selected
-        const currFilter = event.target.value;
-
+    // Helper function to return all vactions from service sorted
+    async function getAllVacationsSorted() {
         try {
             // Fetch all vacations
             const allVacations = await vacationService.getAllVacations();
@@ -34,6 +32,20 @@ function VacationsList(): JSX.Element {
             // Sort vacations by start date
             allVacations.sort((a, b) => 
                 (new Date(a.startDate).getTime() - new Date(b.startDate).getTime()));
+
+            return allVacations;
+        } catch (err) {
+            notify.errorMsg(err);
+        }
+    }
+
+    const handleSelectChange = async (event:ChangeEvent<HTMLSelectElement>) => {
+        // Store current filter selected
+        const currFilter = event.target.value;
+
+        try {
+            // Fetch all vacations sorted
+            const allVacations = await getAllVacationsSorted();
         
             filterVacation(allVacations, currFilter)
         } catch (err) {

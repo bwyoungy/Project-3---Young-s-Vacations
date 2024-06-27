@@ -72,8 +72,10 @@ async function addVacation(vacation:VacationModel):Promise<VacationModel> {
 
     // Update the parameter vacation's ID as the auto incremented ID recieved from the info
     vacation.vacationID = info.insertId;
-
-    // Return updated parameter meeting
+    // Set follows parameter as empty array so won't be undefined
+    vacation.follows = [];
+    
+    // Return updated parameter vacation
     return vacation;
 }
 
@@ -143,6 +145,9 @@ async function updateVacation(vacation:VacationModel):Promise<VacationModel> {
     // Check if ID exists by checking affectedRows of info, if it doesn't throw an error (and quit function)
     if (info.affectedRows <= 0) throw new ResourceNotFoundErrorModel(`ID ${vacation.vacationID}`);
 
+    // Add array of follows connected to vacation
+    vacation.follows = await followsLogic.getFollowsByVacation(vacation.vacationID);
+    
     // Return updated vacation
     return vacation;
 }

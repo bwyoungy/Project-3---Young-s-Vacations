@@ -61,7 +61,6 @@ router.put("/vacations/:id", verifyAdmin, async(request:Request,response:Respons
 
 // Route to delete a vacation
 router.delete("/vacations/:id", verifyAdmin, async(request:Request,response:Response,next:NextFunction)=>{
-    console.log("entered backend vac-con")
     try {
         await vacationsLogic.deleteVacation(+request.params.id);
         response.sendStatus(204);

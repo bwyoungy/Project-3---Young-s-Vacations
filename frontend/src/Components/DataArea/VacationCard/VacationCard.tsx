@@ -8,7 +8,6 @@ import GetRole from "../../../Utils/AuthCheck";
 import RoleModel from "../../../Models/RoleModel";
 import followService from "../../../Services/FollowsService";
 import { authStore } from "../../../Redux/AuthState";
-import { useEffect, useState } from "react";
 import FollowModel from "../../../Models/FollowModel";
 
 interface VacationCardProps {

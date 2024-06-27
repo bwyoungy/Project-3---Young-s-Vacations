@@ -111,7 +111,7 @@ function UsersList(): JSX.Element {
                     </tbody>
                 </table>
             </>
-            )}/
+            )}
         </div>
     );
 }

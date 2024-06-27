@@ -61,7 +61,11 @@ class VacationService {
     }
 
     public async deleteVacation(id:number): Promise<void> {
+        console.log("entered delete");
+        
         await axios.delete<void>(appConfig.vacationsUrl + id);
+
+        console.log("deleted")
 
         vacationsStore.dispatch({type: VacationsActionType.DeleteVacation, payload: id});
     }

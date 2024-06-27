@@ -14,6 +14,8 @@ class NotifyService {
     }
 
     private extractErrMsg(error:any):string {
+        console.log(error);
+        
         if  (typeof error === "string") return error;
 
         if (typeof error.response?.data === "string") return error.response.data;

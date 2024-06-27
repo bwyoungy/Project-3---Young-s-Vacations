@@ -4,9 +4,7 @@ import appConfig from "../Utils/Config";
 
 class UserService {
     public async getAllUsers():Promise<UserModel[]> {
-        
-            const response = await axios.get<UserModel[]>(appConfig.usersUrl);
-            
+        const response = await axios.get<UserModel[]>(appConfig.usersUrl);
         return response.data;
     }
 

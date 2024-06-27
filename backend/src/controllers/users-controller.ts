@@ -1,11 +1,12 @@
 import express, { NextFunction, Request, Response } from "express";
 import usersLogic from "../logic/users-logic";
+import verifyAdmin from "../middleware/verify-admin";
 
 // Create express router
 const router = express.Router();
 
 // Route to get all users
-router.get("/users", async(request:Request, response:Response, next:NextFunction)=>{
+router.get("/users", verifyAdmin, async(request:Request, response:Response, next:NextFunction)=>{
     try {
         const users = await usersLogic.getAllUsers();
         response.json(users);
@@ -15,7 +16,7 @@ router.get("/users", async(request:Request, response:Response, next:NextFunction
 });
 
 // Route to delete a user
-router.delete("/users/:username", async(request:Request,response:Response,next:NextFunction)=>{
+router.delete("/users/:username", verifyAdmin, async(request:Request,response:Response,next:NextFunction)=>{
     try {
         await usersLogic.deleteUser(request.params.username);
         response.sendStatus(204);
@@ -25,7 +26,7 @@ router.delete("/users/:username", async(request:Request,response:Response,next:N
 });
 
 // Route to promote user
-router.patch("/users/promote/:username", async(request:Request,response:Response,next:NextFunction)=>{
+router.patch("/users/promote/:username", verifyAdmin, async(request:Request,response:Response,next:NextFunction)=>{
     try {
         await usersLogic.promoteUser(request.params.username);
         response.sendStatus(204);
@@ -35,7 +36,7 @@ router.patch("/users/promote/:username", async(request:Request,response:Response
 });
 
 // Route to demote admin
-router.patch("/users/demote/:username", async(request:Request,response:Response,next:NextFunction)=>{
+router.patch("/users/demote/:username", verifyAdmin, async(request:Request,response:Response,next:NextFunction)=>{
     try {
         await usersLogic.demoteUser(request.params.username);
         response.sendStatus(204);

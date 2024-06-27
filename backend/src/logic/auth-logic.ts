@@ -16,11 +16,11 @@ async function register(user:UserModel):Promise<string> {
     // If there were errors in validation, throw an error (and quit function)
     if (errors) throw new ValidationErrorModel(errors);
 
-    // Check if username used already
+    // Check if username was used already
     const usernameExists = await checkUsernameExists(user.username);
     if(usernameExists) throw new ResourceExistsErrorModel(`${user.username} has already been used`);
 
-    // Check if email used already
+    // Check if email was used already
     const emailExists = await checkEmailExists(user.email);
     if(emailExists) throw new ResourceExistsErrorModel(`${user.email} already has a registered user`);
 

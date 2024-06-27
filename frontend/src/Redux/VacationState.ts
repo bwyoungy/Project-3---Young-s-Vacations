@@ -25,19 +25,19 @@ export function vacationsReducer(currentState = new VacationState(), action:Vaca
     const dupState = {...currentState}; // copy by refrence
 
     switch (action.type) {
-        case VacationsActionType.GetVacations:
+        case VacationsActionType.GetVacations: // Payload is VacationModel[]
             dupState.vacations = action.payload;
             break;
     
-        case VacationsActionType.AddVacation:
+        case VacationsActionType.AddVacation: // Payload is VacationModel
             dupState.vacations.push(action.payload);
             break;
     
-        case VacationsActionType.UpdateVacation:
+        case VacationsActionType.UpdateVacation: // Payload is VacationModel
             dupState.vacations[dupState.vacations.findIndex(v => v.vacationID === action.payload.vacationID)] = action.payload;
             break;
     
-        case VacationsActionType.DeleteVacation:
+        case VacationsActionType.DeleteVacation: // Payload is id (number)
             dupState.vacations.splice(dupState.vacations.findIndex(v => v.vacationID === action.payload), 1);
             break;
     }

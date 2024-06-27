@@ -2,6 +2,7 @@ import axios from "axios";
 import { authStore } from "../Redux/AuthState";
 
 class InterceptorService {
+    // Function to create interceptor
     public createInterceptor():void {
         axios.interceptors.request.use(request => {
             // If token exists, add it to request, otherwise leave request as is

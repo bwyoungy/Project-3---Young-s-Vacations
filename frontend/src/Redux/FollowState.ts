@@ -24,15 +24,15 @@ export function followsReducer(currentState = new FollowState(), action:FollowsA
     const dupState = {...currentState}; // copy by refrence
 
     switch (action.type) {
-        case FollowsActionType.GetFollowsByUser:
+        case FollowsActionType.GetFollowsByUser: // Payload is FollowModel[]
             dupState.follows = action.payload;
             break;
     
-        case FollowsActionType.AddFollow:
+        case FollowsActionType.AddFollow: // Payload is FollowModel
             dupState.follows.push(action.payload);
             break;
     
-        case FollowsActionType.Unfollow:
+        case FollowsActionType.Unfollow: // Payload is FollowModel
             dupState.follows.splice(dupState.follows.findIndex(f => f.vacationID === action.payload.vacationID && f.username === action.payload.username), 1);
             break;
     }

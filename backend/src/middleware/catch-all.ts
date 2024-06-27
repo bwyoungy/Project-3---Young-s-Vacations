@@ -7,6 +7,7 @@ function catchAll(error:any, request:Request, response:Response, next:NextFuncti
     console.log(error);
     logger(error.message);
 
+    // Return status of the error or 500 (generic error) status
     response.status(error.status || 500).send(error.message);
 }
 

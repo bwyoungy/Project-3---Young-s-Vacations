@@ -9,6 +9,7 @@ const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
 
+// Create interceptor
 interceptorService.createInterceptor();
 
 root.render(

@@ -21,7 +21,7 @@ server.use(express.json());
 // Sanitize request body - Remove HTML and script tags
 server.use(sanitize);
 
-// Limit user use to defend against DoS attacks
+// Limit user use to safeguard against DoS attacks
 server.use("/api", expressRateLimit({
     max: 20, // maximum requests per client
     windowMs: 1000 // Time window for maximum requests
@@ -30,7 +30,7 @@ server.use("/api", expressRateLimit({
 // Add handling of uploaded files
 server.use(expressFileUpload());
 
-// Route api to the controller
+// Route api to the controllers
 server.use("/api", authController);
 server.use("/api", vacationsController);
 server.use("/api", followsController);

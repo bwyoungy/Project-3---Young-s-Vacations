@@ -8,9 +8,12 @@ export class AuthState {
     public token: string = null;
 
     public constructor() {
+        // Get token from session storage
         this.token = sessionStorage.getItem("token");
         
+        // Check if token exists
         if (this.token) {
+            // Decode token and extract user
             const container: {user: UserModel} = jwtDecode(this.token);
             this.user = container.user;
         }
@@ -35,18 +38,24 @@ export interface AuthAction {
 export function authReducer(currentState = new AuthState(), action:AuthAction) : AuthState {
     const dupState = {...currentState}; // Copy state by reference
 
+    // Select action type
     switch (action.type) {
-        case AuthActionType.Register:
-        case AuthActionType.Login:
+        case AuthActionType.Register: // Payload is token
+        case AuthActionType.Login: // Payload is token
+            // Update token in state
             dupState.token = action.payload;
+            // Extract user from token and update in state
             const container: {user:UserModel} = jwtDecode(dupState.token);
             dupState.user = container.user;
+            // Set token in session storage
             sessionStorage.setItem("token", dupState.token);
             break;
         
-        case AuthActionType.Logout:
+        case AuthActionType.Logout: // No payload
+            // Remove token and user from state
             dupState.token = null;
             dupState.user = null;
+            // Remove token from session storage
             sessionStorage.removeItem("token");
             break;
     }

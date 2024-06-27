@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import RoleModel from "../Models/RoleModel";
 import { authStore } from "../Redux/AuthState";
 
+// Function to get the role of the current user
 function GetRole(): string {
     const[role, setRole] = useState<string>("");
 

@@ -28,15 +28,21 @@ function VacationsList(): JSX.Element {
         const currFilter = event.target.value;
 
         try {
-            // Fetch all vacations from backend
+            // Fetch all vacations
             const allVacations = await vacationService.getAllVacations();
             
             // Sort vacations by start date
             allVacations.sort((a, b) => 
-                (new Date(a.startDate).getDate() + (new Date(a.startDate).getMonth()+1)*100 + new Date(a.startDate).getFullYear()*10000) 
-            - (new Date(b.startDate).getDate() + (new Date(b.startDate).getMonth()+1)*100 + new Date(b.startDate).getFullYear()*10000))
+                (new Date(a.startDate).getTime() - new Date(b.startDate).getTime()));
         
-            // Select filter case based on user's choice
+            filterVacation(allVacations, currFilter)
+        } catch (err) {
+            notify.errorMsg(err);
+        }
+    }
+
+    function filterVacation(allVacations: VacationModel[], currFilter: string) {
+        // Select filter case based on user's choice
             switch (currFilter) {
                 case "follows":
                     setVacations(allVacations.filter(v => v.follows.some(f => f.username === currUser.username)));
@@ -53,9 +59,6 @@ function VacationsList(): JSX.Element {
                     break;
             }
             setFilter(currFilter);
-        } catch (err) {
-            notify.errorMsg(err);
-        }
     }
 
     return (

@@ -9,6 +9,7 @@ class VacationService {
 
         if (vacations.length === 0 ) {
             const response = await axios.get<VacationModel[]>(appConfig.vacationsUrl);
+            vacations = response.data;
             vacationsStore.dispatch({type: VacationsActionType.GetVacations, payload: response.data});
         }
         
@@ -61,11 +62,7 @@ class VacationService {
     }
 
     public async deleteVacation(id:number): Promise<void> {
-        console.log("entered delete");
-        
         await axios.delete<void>(appConfig.vacationsUrl + id);
-
-        console.log("deleted")
 
         vacationsStore.dispatch({type: VacationsActionType.DeleteVacation, payload: id});
     }

@@ -1,6 +1,24 @@
 .Layout {
-	height: 100%;
     box-sizing: border-box;
     display: grid;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: 10% 1fr 10%; /* 1fr makes main fill remaining space */
+    min-height: 0; /* Ensure .Layout can shrink below its content's intrinsic height */
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+    overflow-y: auto; /* Enable vertical scrolling for main content */
+    min-height: 0; /* Ensure main can shrink below its content's intrinsic height */
+}
+
+footer {
+    grid-area: footer;
 }

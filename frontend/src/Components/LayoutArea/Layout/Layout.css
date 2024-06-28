@@ -1,24 +1,20 @@
 .Layout {
-    box-sizing: border-box;
+    flex: 1; /* Take remaining height */
     display: grid;
-    grid-template-areas:
-        "header"
-        "main"
-        "footer";
-    grid-template-rows: 10% 1fr 10%; /* 1fr makes main fill remaining space */
+    grid-template-rows: auto 1fr auto; /* Header, Main (fill remaining), Footer */
     min-height: 0; /* Ensure .Layout can shrink below its content's intrinsic height */
 }
 
 header {
-    grid-area: header;
+    grid-row: 1; /* Header goes in first row */
 }
 
 main {
-    grid-area: main;
-    overflow-y: auto; /* Enable vertical scrolling for main content */
+    grid-row: 2; /* Main content fills the remaining space */
+    overflow-y: auto; /* Enable vertical scrolling for main content if needed */
     min-height: 0; /* Ensure main can shrink below its content's intrinsic height */
 }
 
 footer {
-    grid-area: footer;
+    grid-row: 3; /* Footer goes in last row */
 }

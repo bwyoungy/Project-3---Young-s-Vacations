@@ -4,6 +4,8 @@ html, body, #root {
     height: 100%;
     text-align: center;
     background-image: linear-gradient(45deg, gold, yellow);
+    display: flex;
+    flex-direction: column;
 }
 
 .Card {

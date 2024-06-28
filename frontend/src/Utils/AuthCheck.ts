@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import RoleModel from "../Models/RoleModel";
 import { authStore } from "../Redux/AuthState";
 
 // Function to get the role of the current user
@@ -12,6 +11,8 @@ function GetRole(): string {
             const user = authStore.getState().user;
             // If user exists set role
             if (user) setRole(user.role);
+            // Otherwise set as empty role
+            else setRole("");
         };
 
         updateRole();

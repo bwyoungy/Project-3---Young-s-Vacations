@@ -13,6 +13,8 @@ function VacationsList(): JSX.Element {
     
     const[vacations, setVacations] = useState<VacationModel[]>([]);
     const[filter, setFilter] = useState<string>("all");
+    const[currentPage, setCurrentPage] = useState<number>(1);
+    const perPage = 10; // Number of vacations to display per page
 
     useEffect(()=>{
         getAllVacationsSorted()
@@ -36,6 +38,7 @@ function VacationsList(): JSX.Element {
             return allVacations;
         } catch (err) {
             notify.errorMsg(err);
+            return [];
         }
     }
 
@@ -46,7 +49,6 @@ function VacationsList(): JSX.Element {
         try {
             // Fetch all vacations sorted
             const allVacations = await getAllVacationsSorted();
-        
             filterVacation(allVacations, currFilter)
         } catch (err) {
             notify.errorMsg(err);
@@ -71,7 +73,17 @@ function VacationsList(): JSX.Element {
                     break;
             }
             setFilter(currFilter);
+            // Reset current page after filter changes
+            setCurrentPage(1);
     }
+
+    // Calculate pagination
+    const lastVacationIndex = currentPage * perPage;
+    const firstVacationIndex = lastVacationIndex - perPage;
+    const currentVacations = vacations.slice(firstVacationIndex, lastVacationIndex);
+
+    // Change page
+    const paginate = (pageNumber:number) => setCurrentPage(pageNumber);
 
     return (
         <div className="VacationsList">
@@ -99,7 +111,16 @@ function VacationsList(): JSX.Element {
             </select>
             <br />
             {/* For each vacation show the vacation in a VacationCard component */}
-            {vacations.map(v => <VacationCard key={v.vacationID} vacation={v}/>)}
+            {currentVacations.map(v => <VacationCard key={v.vacationID} vacation={v}/>)}
+
+            {/* Pagination controls */}
+            <div className="pagination">
+                {Array.from({ length: Math.ceil(vacations.length / perPage) }, (_, i) => (
+                    <span key={i} className={`page-item ${currentPage === i + 1 ? 'active' : ''}`}>
+                        <button onClick={() => paginate(i+1)} className="page-link">{i+1}</button>
+                    </span>
+                ))}
+            </div>
             </>
             }
         </div>

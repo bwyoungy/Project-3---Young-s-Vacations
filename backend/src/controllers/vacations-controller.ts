@@ -24,8 +24,9 @@ router.get("/vacations/:id", async(request:Request, response:Response, next:Next
     try {
         // Get a vacation based on id supplied in parameter
         const vacation = await vacationsLogic.getVacationById(+request.params.id);
+        
         // Return the vacation requested by id
-        response.json(vacation[0]);
+        response.json(vacation);
     } catch (error:any) {
         next(error);
     }

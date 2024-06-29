@@ -55,7 +55,7 @@ async function deleteUser(username:string):Promise<void> {
     // Execute SQL query and save the info recieved from it
     const info:OkPacket = await dal.execute(sqlQuery, [username]);
 
-    // Check if username exists by checking affectedRows of info, if it doesn't throw an error
+    // Check if username was deleted by checking affectedRows of info, if it wasn't throw an error
     if (info.affectedRows <= 0) throw new ResourceNotFoundErrorModel(username);
 }
 

@@ -15,8 +15,8 @@ class FollowModel {
     });
 
     public validate():string {
-        const reuslt = FollowModel.validationScheme.validate(this);
-        return reuslt.error?.message;
+        const result = FollowModel.validationScheme.validate(this);
+        return result.error?.message;
     }
 }
 

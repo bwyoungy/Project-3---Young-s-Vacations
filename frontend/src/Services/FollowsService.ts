@@ -4,7 +4,7 @@ import appConfig from "../Utils/Config";
 import { FollowsActionType, followsStore } from "../Redux/FollowState";
 
 class FollowService {
-    // Function to get all follow of a user
+    // Function to get all follows of a user
     public async getFollowsByUser(username:string):Promise<FollowModel[]> {
         // Get follows from redux store
         let follows = followsStore.getState().follows;

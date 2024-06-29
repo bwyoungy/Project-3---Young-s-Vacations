@@ -29,7 +29,7 @@ class VacationService {
         // Find specific vacation based on id
         let vacation = vacations.find(v => v.vacationID === id);
 
-        // Check if vacation  found in redux store
+        // Check if vacation found in redux store
         if(!vacation) {
             // If vacation not in redux store, get vacation from backend using API call
             const response = await axios.get<VacationModel>(appConfig.vacationsUrl + id);

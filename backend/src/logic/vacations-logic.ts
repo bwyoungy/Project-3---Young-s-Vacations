@@ -38,9 +38,9 @@ async function getVacationById(id:number):Promise<VacationModel> {
     if (!vacation) throw new ResourceNotFoundErrorModel(`ID ${id}`);
 
     // Add array of follows connected to vacation
-    vacation.follows = await followsLogic.getFollowsByVacation(vacation.vacationID);
+    vacation[0].follows = await followsLogic.getFollowsByVacation(vacation[0].vacationID);
 
-    return vacation;
+    return vacation[0];
 }
 
 // Function to add a new vacation

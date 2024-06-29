@@ -11,6 +11,7 @@ import Login from "../../AuthArea/Login/Login";
 import Logout from "../../AuthArea/Logout/Logout";
 import Report from "../../DataArea/Report/Report";
 import UsersList from "../../UsersArea/UsersList/UsersList";
+import AddReview from "../../ReviewsArea/AddReview/AddReview";
 
 function Routing(): JSX.Element {
     return (
@@ -39,6 +40,9 @@ function Routing(): JSX.Element {
 
                 {/* Edit Vacation */}
                 <Route path="/vacations/edit/:vacationID" element={<EditVacation/>}/>
+
+                {/* Add Review of vacation */}
+                <Route path="/review/:vacationID" element={<AddReview/>}/>
 
                 {/* Report */}
                 <Route path="/report" element={<Report/>}/>

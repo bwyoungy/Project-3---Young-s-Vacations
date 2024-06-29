@@ -7,6 +7,7 @@ import authController from "./controllers/auth-controller"
 import vacationsController from "./controllers/vacations-controller";
 import followsController from "./controllers/follows-controller";
 import usersController from "./controllers/users-controller";
+import reviewsController from "./controllers/reviews-controller";
 import expressFileUpload from "express-fileupload"
 import sanitize from "./middleware/sanitize";
 import expressRateLimit from "express-rate-limit"
@@ -35,6 +36,7 @@ server.use("/api", authController);
 server.use("/api", vacationsController);
 server.use("/api", followsController);
 server.use("/api", usersController);
+server.use("/api", reviewsController);
 
 // Route error in finding route and other errors
 server.use("*", routeNotFound);

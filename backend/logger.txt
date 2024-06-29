@@ -76,3 +76,6 @@
 13:57:43 	 Cannot read properties of undefined (reading 'role')-----------------------------------------
 14:14:35 	 Cannot read properties of undefined (reading 'role')-----------------------------------------
 14:15:30 	 Cannot read properties of undefined (reading 'role')-----------------------------------------
+1:25:56 	 -----------------------------------------
+1:39:55 	 "rating" must be a positive number-----------------------------------------
+1:40:07 	 "rating" must be a positive number-----------------------------------------

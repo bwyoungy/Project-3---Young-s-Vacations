@@ -6,17 +6,22 @@ import ReviewModel from "../../../Models/ReviewModel";
 import notify from "../../../Services/NotifyService";
 import reviewService from "../../../Services/ReviewsService";
 import { authStore } from "../../../Redux/AuthState";
+import { useState } from "react";
+import {FaStar} from "react-icons/fa"
 
 function AddReview(): JSX.Element {
 
     const params = useParams();
     const {register, handleSubmit, formState} = useForm<ReviewModel>();
     const navigate = useNavigate();
+    const [rating, setRating] = useState<number>(null);
+    const [hoverRating, setHoverRating] = useState<number>(null);
 
     async function send(review:ReviewModel) {
         try {
             review.vacationID = +params.vacationID;
             review.username = authStore.getState().user.username;
+            review.rating = rating ?? 0;
             await reviewService.addReview(review);
             notify.successMsg("Review added successfully!");
             // Navigate back to vacation user reviewed
@@ -25,6 +30,12 @@ function AddReview(): JSX.Element {
             notify.errorMsg(error);
         }
     }
+
+    const stars = [1, 2, 3, 4, 5].map(star => {
+        let icon = <FaStar size={32} style={{color:"gold"}}/>;
+        if (star > (hoverRating ?? rating ?? 0)) icon = <FaStar style={{opacity:0.5, fontSize:"2em",color:"gold"}}/>
+        return (<span key={star} onMouseEnter={()=>setHoverRating(star)} onMouseLeave={()=>setHoverRating(null)} onClick={()=>setRating(star)}>{icon}</span>);
+    });
 
     return (
         <div className="AddReview">
@@ -41,14 +52,13 @@ function AddReview(): JSX.Element {
                     <h2>Add Review</h2>
 
                     <label>Rating: </label>
-                    <input type="number" min={1} max={5} {...register("rating", ReviewModel.ratingValidation)}/>
-                    <p className="error">{formState.errors.rating?.message}</p>
+                    <div className="stars-rating">{stars}</div>
 
                     <label>Review: </label>
                     <input type="text" {...register("content", ReviewModel.contentValidation)}/>
                     <p className="error">{formState.errors.content?.message}</p>
 
-                    <button>Add Review</button>
+                    <button disabled={!rating}>Add Review</button>
                 </form>
             </>
             }

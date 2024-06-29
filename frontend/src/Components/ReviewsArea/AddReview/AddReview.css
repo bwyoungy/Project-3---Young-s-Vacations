@@ -1,3 +1,8 @@
-.AddReview {
-	
+.star-rating {
+    display: flex;
+}
+
+.star-rating span {
+    cursor: pointer;
+    font-size: 2em;
 }

@@ -9,7 +9,7 @@ class VacationModel {
     public price:number;
     public imageName:string;
     public image: FileList;
-    public follows: FollowModel[];
+    public follows: FollowModel[] = [];
 
     public static destinationValidation = {
         required: {value: true, message: "Please write a destination"},

@@ -79,3 +79,13 @@
 1:25:56 	 -----------------------------------------
 1:39:55 	 "rating" must be a positive number-----------------------------------------
 1:40:07 	 "rating" must be a positive number-----------------------------------------
+3:42:07 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+3:42:09 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+3:42:26 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+3:43:46 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+3:47:18 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+3:47:20 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+3:47:21 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+3:47:49 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+3:49:13 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------
+3:49:52 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------

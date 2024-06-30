@@ -73,7 +73,6 @@ function VacationDetails(): JSX.Element {
     }
 }
 
-
     const role = GetRole();
 
     return (

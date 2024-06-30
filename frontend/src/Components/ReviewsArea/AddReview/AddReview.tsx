@@ -16,12 +16,15 @@ function AddReview(): JSX.Element {
     const navigate = useNavigate();
     const [rating, setRating] = useState<number>(null);
     const [hoverRating, setHoverRating] = useState<number>(null);
+    const [reviewCharCount, setReviewCharCount] = useState<number>(0);
 
     async function send(review:ReviewModel) {
         try {
+            // Set review paramaters which weren't updated in the input form
             review.vacationID = +params.vacationID;
             review.username = authStore.getState().user.username;
-            review.rating = rating ?? 0;
+            review.rating = rating;
+            // Add new review using service
             await reviewService.addReview(review);
             notify.successMsg("Review added successfully!");
             // Navigate back to vacation user reviewed
@@ -31,6 +34,13 @@ function AddReview(): JSX.Element {
         }
     }
 
+    // Handle when content changes to update the character count state
+    const handleContentChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
+        const content = event.target.value;
+        setReviewCharCount(content.length);
+    };
+
+    // Show 5 stars which are filled on display according to where user is hovering
     const stars = [1, 2, 3, 4, 5].map(star => {
         let icon = <FaStar size={32} style={{color:"gold"}}/>;
         if (star > (hoverRating ?? rating ?? 0)) icon = <FaStar style={{opacity:0.5, fontSize:"2em",color:"gold"}}/>
@@ -55,7 +65,9 @@ function AddReview(): JSX.Element {
                     <div className="stars-rating">{stars}</div>
 
                     <label>Review: </label>
-                    <input type="text" {...register("content", ReviewModel.contentValidation)}/>
+                    <br />
+                    <textarea {...register("content", ReviewModel.contentValidation)} rows={20} cols={50} maxLength={1000} onChange={handleContentChange}></textarea>
+                    <p className="char-count">{reviewCharCount}/1000</p>
                     <p className="error">{formState.errors.content?.message}</p>
 
                     <button disabled={!rating}>Add Review</button>

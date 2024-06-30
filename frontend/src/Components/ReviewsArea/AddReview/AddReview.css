@@ -6,3 +6,8 @@
     cursor: pointer;
     font-size: 2em;
 }
+
+.char-count {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.6);
+}

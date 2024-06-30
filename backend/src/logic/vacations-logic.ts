@@ -22,6 +22,26 @@ async function getAllVacations():Promise<VacationModel[]> {
     return vacations;
 }
 
+// Function to get popular vacations
+async function getPopularVacations(limit:number):Promise<VacationModel[]> {
+    // Create SQL query - selects all columns from vacations table for most followed vacations
+    const sqlQuery = `
+        SELECT v.vacationID, v.destination, v.description, DATE_FORMAT(v.startDate, "%Y-%m-%d") as "startDate", DATE_FORMAT(v.endDate, "%Y-%m-%d") as "endDate", v.price, v.imageName
+        FROM vacations v
+        LEFT JOIN follows f ON v.vacationID = f.vacationID
+        GROUP BY v.vacationID
+        ORDER BY COUNT(f.vacationID) DESC, v.startDate ASC
+        LIMIT ?;`;
+    
+    // Execute SQL query and save in variable to be returned
+    const vacations = await dal.execute(sqlQuery, [limit]);
+    
+    // For each vacation, add an array of follows connected to it
+    for (const vacation of vacations) vacation.follows = await followsLogic.getFollowsByVacation(vacation.vacationID);
+
+    return vacations;
+}
+
 // Function to get a vacation based on its id
 async function getVacationById(id:number):Promise<VacationModel> {
     // Create SQL query - selects all columns from vacations table for specific id, with dates formatted
@@ -188,6 +208,7 @@ async function deleteVacation(id:number):Promise<void> {
 
 export default {
     getAllVacations,
+    getPopularVacations,
     getVacationById,
     addVacation,
     updateVacation,

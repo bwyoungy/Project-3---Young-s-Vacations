@@ -22,6 +22,13 @@ class VacationService {
         return vacations;
     }
 
+    // Function to get popular vacations
+    public async getPopularVacations(limit:number):Promise<VacationModel[]> {
+        // Get popular vacations from backend using API call
+        const response = await axios.get<VacationModel[]>(appConfig.vacationsUrl + "popular/" + limit);
+        return response.data;
+    }
+
     // Function to get vacation by id
     public async getVacationById(id:number):Promise<VacationModel> {
         // Get all vacations from redux store

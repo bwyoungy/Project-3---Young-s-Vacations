@@ -19,6 +19,18 @@ router.get("/vacations", async(request:Request, response:Response, next:NextFunc
     }
 });
 
+// Route to get popular vacations
+router.get("/vacations/popular/:limit", async(request:Request, response:Response, next:NextFunction)=>{
+    try {
+        // Get popular vacations
+        const vacations = await vacationsLogic.getPopularVacations(+request.params.limit);
+        // Return vacations
+        response.json(vacations);
+    } catch (error:any) {
+        next(error);
+    }
+});
+
 // Route to get a vacation based on its id
 router.get("/vacations/:id", async(request:Request, response:Response, next:NextFunction)=>{
     try {

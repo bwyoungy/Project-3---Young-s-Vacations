@@ -1,0 +1,1 @@
+12:12:12 	 ENOENT: no such file or directory, stat 'C:\Users\agent\Documents\John Bryce\Projects\Project 3\young-vacations\frontend\public\undefined'-----------------------------------------

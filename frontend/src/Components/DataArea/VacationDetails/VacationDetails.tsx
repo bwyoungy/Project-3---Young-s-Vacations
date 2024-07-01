@@ -100,6 +100,7 @@ function VacationDetails(): JSX.Element {
             <h4>Reviews</h4>
             {/* For each review show the review in a ReviewCard component */}
             {reviews.map(r => <ReviewCard key={r.reviewID} review={r} onDelete={() => deleteReview(r.reviewID)}/>)}
+            {reviews.length === 0 && <p>This destination hasn't been reviewed yet</p>}
             {/* Option to add a review open to users & admins */}
             <p>Have you been at this destination? Please help us and your friends by <NavLink to={`/review/${vacation.vacationID}`}>adding a review</NavLink></p>
 

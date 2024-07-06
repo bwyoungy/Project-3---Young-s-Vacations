@@ -9,6 +9,8 @@ import RoleModel from "../../../Models/RoleModel";
 import followService from "../../../Services/FollowsService";
 import { authStore } from "../../../Redux/AuthState";
 import FollowModel from "../../../Models/FollowModel";
+import reviewService from "../../../Services/ReviewsService";
+import { useEffect, useState } from "react";
 
 interface VacationCardProps {
     vacation: VacationModel;
@@ -16,6 +18,13 @@ interface VacationCardProps {
 
 function VacationCard(props: VacationCardProps): JSX.Element {
     const navigate = useNavigate();
+    const [reviewAvg, setReviewAvg] = useState(null);
+
+    useEffect(()=>{
+        reviewService.getReviewAvgByVacation(props.vacation.vacationID)
+        .then(reviewAvg => setReviewAvg(reviewAvg))
+        .catch(err => notify.errorMsg(err));
+    }, []);
 
     async function deleteVacation(vacationID:number) {
         // Display confirmation dialog
@@ -62,7 +71,7 @@ function VacationCard(props: VacationCardProps): JSX.Element {
     return (
         <div className="VacationCard Card">
             <div className="heart">&#9829;<span className="heart-number">{props.vacation.follows.length}</span></div>
-			{/* <div className="star">&#9733;<span className="star-number">{props.vacation.follows.length}</span></div> */}
+			<div className="star">&#9733;<span className="star-number">{reviewAvg ? reviewAvg : "N/A"}</span></div>
 			<h4>{props.vacation.destination}</h4>
             <p>{new Date(props.vacation.startDate).toLocaleDateString()} → {new Date(props.vacation.endDate).toLocaleDateString()}</p>
             <p>${props.vacation.price}</p>

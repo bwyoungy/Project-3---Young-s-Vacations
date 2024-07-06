@@ -18,8 +18,12 @@
     transform: scale(1.1);
 }
 
-.heart {
+.heart, .star {
     font-size: 4.0rem; /* Adjust size as needed */
+    display: inline-block;
+}
+
+.heart {
     color: red; /* Color of the heart outline */
     text-shadow:
       1px 1px 0 rgb(218, 32, 88),
@@ -30,15 +34,14 @@
 
   .heart-number {
     position: relative;
-    top: -0.3em; /* Adjust vertical alignment of number */
-    left: -0.8em; /* Adjust horizontal alignment of number */
-    font-size: 0.5em; /* Adjust size of the number */
+    top: -0.4em; /* Adjust vertical alignment of number */
+    left: -0.9em; /* Adjust horizontal alignment of number */
+    font-size: 0.45em; /* Adjust size of the number */
     color: black; /* Color of the number */
     font-weight: bold;
 }
 
 .star {
-    font-size: 4.0rem; /* Adjust size as needed */
     color: yellow; /* Color of the star outline */
     text-shadow:
       1px 1px 0 goldenrod,
@@ -49,9 +52,9 @@
 
   .star-number {
     position: relative;
-    top: -0.2em; /* Adjust vertical alignment of number */
-    left: -1.1em; /* Adjust horizontal alignment of number */
-    font-size: 0.5em; /* Adjust size of the number */
+    top: -0.6em; /* Adjust vertical alignment of number */
+    left: -2.0em; /* Adjust horizontal alignment of number */
+    font-size: 0.3em; /* Adjust size of the number */
     color: black; /* Color of the number */
     font-weight: bold;
 }

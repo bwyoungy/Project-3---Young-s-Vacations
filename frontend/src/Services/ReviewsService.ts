@@ -10,6 +10,16 @@ class ReviewService {
         return response.data;
     }
 
+    // Function to get average review score by vacation ID
+    public async getReviewAvgByVacation(vacationID:number):Promise<number>{
+        // Get reviews by vacation
+        const reviews = await this.getReviewsByVacation(vacationID);
+
+        let reviewTotal = reviews.reduce((total, review) => total+review.rating, 0);
+
+        return reviewTotal / reviews.length;
+    }
+
     // Function to add new review
     public async addReview(review:ReviewModel):Promise<void> {
         // Add new review using API call

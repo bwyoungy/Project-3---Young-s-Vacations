@@ -18,15 +18,34 @@
     transform: scale(1.1);
 }
 
+.heart {
+    font-size: 4.0rem; /* Adjust size as needed */
+    color: red; /* Color of the heart outline */
+    text-shadow:
+      1px 1px 0 rgb(218, 32, 88),
+      -1px 1px 0 rgb(218, 32, 88),
+      1px -1px 0 rgb(218, 32, 88),
+      -1px -1px 0 rgb(218, 32, 88); /* Create an outline effect */
+}
+
+  .heart-number {
+    position: relative;
+    top: -0.3em; /* Adjust vertical alignment of number */
+    left: -0.8em; /* Adjust horizontal alignment of number */
+    font-size: 0.5em; /* Adjust size of the number */
+    color: black; /* Color of the number */
+    font-weight: bold;
+}
+
 .star {
-    font-size: 3.5rem; /* Adjust size as needed */
+    font-size: 4.0rem; /* Adjust size as needed */
     color: yellow; /* Color of the star outline */
     text-shadow:
       1px 1px 0 goldenrod,
       -1px 1px 0 goldenrod,
       1px -1px 0 goldenrod,
       -1px -1px 0 goldenrod; /* Create an outline effect */
-  }
+}
 
   .star-number {
     position: relative;
@@ -35,4 +54,4 @@
     font-size: 0.5em; /* Adjust size of the number */
     color: black; /* Color of the number */
     font-weight: bold;
-  }
+}

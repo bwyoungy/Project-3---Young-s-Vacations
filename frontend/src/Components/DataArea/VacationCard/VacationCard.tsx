@@ -61,7 +61,8 @@ function VacationCard(props: VacationCardProps): JSX.Element {
 
     return (
         <div className="VacationCard Card">
-            <div className="star">&#9733;<span className="star-number">{props.vacation.follows.length}</span></div>
+            <div className="heart">&#9829;<span className="heart-number">{props.vacation.follows.length}</span></div>
+			{/* <div className="star">&#9733;<span className="star-number">{props.vacation.follows.length}</span></div> */}
 			<h4>{props.vacation.destination}</h4>
             <p>{new Date(props.vacation.startDate).toLocaleDateString()} → {new Date(props.vacation.endDate).toLocaleDateString()}</p>
             <p>${props.vacation.price}</p>
